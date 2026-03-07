@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BLANC HAIR — メニュー・料金表。カット・カラー・パーマ・トリートメント。">
+  <title>Menu | BLANC HAIR</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/menu.css">
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-main">Blanc Hair</span>
+        <span class="header__logo-sub">Beauty Salon</span>
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="nav__link">Top</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="staff.html" class="nav__link">Staff</a>
+        <a href="access.html" class="nav__link">Access</a>
+        <a href="contact.html" class="nav__link btn btn--gold">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" role="dialog" aria-label="モバイルメニュー">
+    <span class="mobile-menu__logo">Blanc Hair</span>
+    <ul class="mobile-menu__list">
+      <li><a href="index.html" class="mobile-menu__link">Top</a></li>
+      <li><a href="menu.html" class="mobile-menu__link">Menu</a></li>
+      <li><a href="staff.html" class="mobile-menu__link">Staff</a></li>
+      <li><a href="access.html" class="mobile-menu__link">Access</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+    <p class="mobile-menu__footer">© 2024 Blanc Hair</p>
+  </div>
+
+  <main>
+
+    <div class="page-hero">
+      <span class="page-hero__label">Menu &amp; Price</span>
+      <h1 class="page-hero__title">Menu</h1>
+      <p class="page-hero__desc">カット・カラー・パーマ・トリートメント</p>
+    </div>
+
+    <section class="menu-section">
+      <div class="menu-section__inner">
+
+        <div class="menu-section__header">
+          <span class="section-label reveal">Cut</span>
+          <div class="gold-divider reveal reveal--delay-1"></div>
+          <h2 class="section-title reveal reveal--delay-1">カット</h2>
+        </div>
+
+        <div class="menu-category reveal">
+          <div class="menu-category__label">
+            <div class="menu-category__icon"></div>
+            <span class="menu-category__name">Cut <span class="menu-category__name-en">カット</span></span>
+          </div>
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <td class="price-table__name">
+                  カット
+                  <small>シャンプー・ブロー込み</small>
+                </td>
+                <td class="price-table__price">¥6,600</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  カット + シャンプー
+                  <small>スタイリングなし</small>
+                </td>
+                <td class="price-table__price">¥5,500</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  メンズカット
+                  <small>シャンプー・ブロー込み</small>
+                </td>
+                <td class="price-table__price">¥5,500</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  前髪カット
+                  <small>来店不要・クイック対応</small>
+                </td>
+                <td class="price-table__price">¥1,100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="menu-category reveal">
+          <div class="menu-category__label">
+            <div class="menu-category__icon"></div>
+            <span class="menu-category__name">Color <span class="menu-category__name-en">カラー</span></span>
+          </div>
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <td class="price-table__name">
+                  全体カラー
+                  <small>ショート〜ミディアム料金</small>
+                </td>
+                <td class="price-table__price">¥8,800〜</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  リタッチカラー
+                  <small>根元3cm程度</small>
+                </td>
+                <td class="price-table__price">¥6,600〜</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  ハイライト
+                  <small>部分・全体</small>
+                </td>
+                <td class="price-table__price">¥12,100〜</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  グレイカラー（白髪染め）
+                  <small>全体</small>
+                </td>
+                <td class="price-table__price">¥8,800〜</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  インナーカラー
+                  <small>グラデーション・イヤリングカラー等</small>
+                </td>
+                <td class="price-table__price">¥11,000〜</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="menu-category reveal">
+          <div class="menu-category__label">
+            <div class="menu-category__icon"></div>
+            <span class="menu-category__name">Perm <span class="menu-category__name-en">パーマ</span></span>
+          </div>
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <td class="price-table__name">
+                  コールドパーマ
+                  <small>ショート〜ミディアム</small>
+                </td>
+                <td class="price-table__price">¥11,000〜</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  デジタルパーマ
+                  <small>熱を使ったツヤウェーブ</small>
+                </td>
+                <td class="price-table__price">¥16,500〜</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  縮毛矯正
+                  <small>根元〜毛先・クセ強めにも対応</small>
+                </td>
+                <td class="price-table__price">¥19,800〜</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  ストレートパーマ
+                  <small>軽いクセ伸ばし</small>
+                </td>
+                <td class="price-table__price">¥14,300〜</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="menu-category reveal">
+          <div class="menu-category__label">
+            <div class="menu-category__icon"></div>
+            <span class="menu-category__name">Treatment <span class="menu-category__name-en">トリートメント</span></span>
+          </div>
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <td class="price-table__name">
+                  ベーシックトリートメント
+                  <small>シャンプー時に施術</small>
+                </td>
+                <td class="price-table__price">¥3,300</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  集中補修トリートメント
+                  <small>ダメージ毛・乾燥毛向け</small>
+                </td>
+                <td class="price-table__price">¥5,500</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  プレミアムトリートメント
+                  <small>サロン最上位・スチーム仕上げ</small>
+                </td>
+                <td class="price-table__price">¥8,800</td>
+              </tr>
+              <tr>
+                <td class="price-table__name">
+                  ヘッドスパ
+                  <small>頭皮ケア・リラクゼーション（30分）</small>
+                </td>
+                <td class="price-table__price">¥4,400</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="menu-note reveal">
+          <p>※ 料金はすべて税込み表示です。</p>
+          <p>※ 髪の長さ・量により追加料金が発生する場合がございます。</p>
+          <p>※ カットとのセットメニューもご用意しております。詳細はスタッフへお気軽にお問い合わせください。</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <p class="footer__logo">Blanc Hair</p>
+          <p class="footer__tagline">上質なひとときを、あなたに。</p>
+        </div>
+        <div class="footer__info">
+          <p class="footer__info-item">〒150-0001 東京都渋谷区神宮前 1-2-3 プレミアムビル2F</p>
+          <p class="footer__info-item">TEL: 03-1234-5678</p>
+          <p class="footer__info-item">営業時間: 10:00 – 20:00（水曜定休）</p>
+        </div>
+        <nav class="footer__nav" aria-label="フッターナビゲーション">
+          <a href="index.html" class="footer__nav-link">Top</a>
+          <a href="menu.html" class="footer__nav-link">Menu</a>
+          <a href="staff.html" class="footer__nav-link">Staff</a>
+          <a href="access.html" class="footer__nav-link">Access</a>
+          <a href="contact.html" class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Blanc Hair. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

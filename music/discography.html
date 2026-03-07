@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SORA — Discography. アルバム・シングル一覧。">
+  <title>Discography | SORA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/discography.css">
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">SORA</a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="discography.html" class="header__nav-link">Discography</a>
+        <a href="live.html" class="header__nav-link">Live</a>
+        <a href="profile.html" class="header__nav-link">Profile</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="discography.html" class="mobile-menu__link">Discography</a>
+    <a href="live.html" class="mobile-menu__link">Live</a>
+    <a href="profile.html" class="mobile-menu__link">Profile</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <div class="page-wrap" id="pageWrap">
+  <main>
+
+    <div class="page-hero">
+      <h1 class="page-hero__title">DISCOGRAPHY</h1>
+      <p class="page-hero__subtitle">Albums · EPs · Singles</p>
+    </div>
+
+    <section class="section">
+
+      <!-- Filter -->
+      <div class="disco-filter reveal">
+        <button class="disco-filter__btn is-active" data-filter="all">All</button>
+        <button class="disco-filter__btn" data-filter="album">Album</button>
+        <button class="disco-filter__btn" data-filter="ep">EP</button>
+        <button class="disco-filter__btn" data-filter="single">Single</button>
+      </div>
+
+      <!-- Albums -->
+      <div class="disco-section">
+        <div class="disco-section__header">
+          <h2 class="disco-section__heading">Albums</h2>
+          <div class="disco-section__line"></div>
+        </div>
+        <div class="disco-grid" data-section="album">
+
+          <article class="disco-card reveal" data-type="album">
+            <div class="disco-card__art">
+              <div class="disco-card__art-inner disco-card__art--1">
+                <span class="disco-card__badge disco-card__badge--album">Album</span>
+              </div>
+            </div>
+            <div class="disco-card__info">
+              <h3 class="disco-card__title">AURORA</h3>
+              <div class="disco-card__meta">
+                <span>2024</span>
+                <span class="disco-card__meta-sep"></span>
+                <span>3rd Album</span>
+              </div>
+              <p class="disco-card__tracks">12 tracks</p>
+            </div>
+          </article>
+
+          <article class="disco-card reveal reveal-delay-1" data-type="album">
+            <div class="disco-card__art">
+              <div class="disco-card__art-inner disco-card__art--2">
+                <span class="disco-card__badge disco-card__badge--album">Album</span>
+              </div>
+            </div>
+            <div class="disco-card__info">
+              <h3 class="disco-card__title">ECLIPSE</h3>
+              <div class="disco-card__meta">
+                <span>2022</span>
+                <span class="disco-card__meta-sep"></span>
+                <span>2nd Album</span>
+              </div>
+              <p class="disco-card__tracks">10 tracks</p>
+            </div>
+          </article>
+
+          <article class="disco-card reveal reveal-delay-2" data-type="album">
+            <div class="disco-card__art">
+              <div class="disco-card__art-inner disco-card__art--4">
+                <span class="disco-card__badge disco-card__badge--album">Album</span>
+              </div>
+            </div>
+            <div class="disco-card__info">
+              <h3 class="disco-card__title">STARLIGHT</h3>
+              <div class="disco-card__meta">
+                <span>2020</span>
+                <span class="disco-card__meta-sep"></span>
+                <span>1st Album</span>
+              </div>
+              <p class="disco-card__tracks">9 tracks</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- EPs -->
+      <div class="disco-section">
+        <div class="disco-section__header">
+          <h2 class="disco-section__heading">EPs</h2>
+          <div class="disco-section__line"></div>
+        </div>
+        <div class="disco-grid" data-section="ep">
+
+          <article class="disco-card reveal" data-type="ep">
+            <div class="disco-card__art">
+              <div class="disco-card__art-inner disco-card__art--5">
+                <span class="disco-card__badge disco-card__badge--ep">EP</span>
+              </div>
+            </div>
+            <div class="disco-card__info">
+              <h3 class="disco-card__title">NEBULA</h3>
+              <div class="disco-card__meta">
+                <span>2023</span>
+                <span class="disco-card__meta-sep"></span>
+                <span>EP</span>
+              </div>
+              <p class="disco-card__tracks">5 tracks</p>
+            </div>
+          </article>
+
+          <article class="disco-card reveal reveal-delay-1" data-type="ep">
+            <div class="disco-card__art">
+              <div class="disco-card__art-inner disco-card__art--7">
+                <span class="disco-card__badge disco-card__badge--ep">EP</span>
+              </div>
+            </div>
+            <div class="disco-card__info">
+              <h3 class="disco-card__title">VOID</h3>
+              <div class="disco-card__meta">
+                <span>2021</span>
+                <span class="disco-card__meta-sep"></span>
+                <span>EP</span>
+              </div>
+              <p class="disco-card__tracks">4 tracks</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Singles -->
+      <div class="disco-section">
+        <div class="disco-section__header">
+          <h2 class="disco-section__heading">Singles</h2>
+          <div class="disco-section__line"></div>
+        </div>
+        <div class="disco-grid" data-section="single">
+
+          <article class="disco-card reveal" data-type="single">
+            <div class="disco-card__art">
+              <div class="disco-card__art-inner disco-card__art--3">
+                <span class="disco-card__badge disco-card__badge--single">Single</span>
+              </div>
+            </div>
+            <div class="disco-card__info">
+              <h3 class="disco-card__title">NOVA</h3>
+              <div class="disco-card__meta">
+                <span>2024</span>
+                <span class="disco-card__meta-sep"></span>
+                <span>Single</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="disco-card reveal reveal-delay-1" data-type="single">
+            <div class="disco-card__art">
+              <div class="disco-card__art-inner disco-card__art--6">
+                <span class="disco-card__badge disco-card__badge--single">Single</span>
+              </div>
+            </div>
+            <div class="disco-card__info">
+              <h3 class="disco-card__title">BLOOM</h3>
+              <div class="disco-card__meta">
+                <span>2023</span>
+                <span class="disco-card__meta-sep"></span>
+                <span>Single</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="disco-card reveal reveal-delay-2" data-type="single">
+            <div class="disco-card__art">
+              <div class="disco-card__art-inner disco-card__art--8">
+                <span class="disco-card__badge disco-card__badge--single">Single</span>
+              </div>
+            </div>
+            <div class="disco-card__info">
+              <h3 class="disco-card__title">HAZE</h3>
+              <div class="disco-card__meta">
+                <span>2022</span>
+                <span class="disco-card__meta-sep"></span>
+                <span>Single</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__logo">SORA</p>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__nav-link">Home</a>
+        <a href="discography.html" class="footer__nav-link">Discography</a>
+        <a href="live.html" class="footer__nav-link">Live</a>
+        <a href="profile.html" class="footer__nav-link">Profile</a>
+        <a href="contact.html" class="footer__nav-link">Contact</a>
+      </nav>
+      <div class="footer__sns">
+        <a href="#" class="footer__sns-link" aria-label="Twitter">𝕏</a>
+        <a href="#" class="footer__sns-link" aria-label="Instagram">◎</a>
+        <a href="#" class="footer__sns-link" aria-label="YouTube">▶</a>
+      </div>
+      <p class="footer__copy">&copy; 2024 SORA. All rights reserved.</p>
+    </div>
+  </footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

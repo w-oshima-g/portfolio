@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SORA — Contact. お問い合わせ・ファンレター受付。">
+  <title>Contact | SORA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">SORA</a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="discography.html" class="header__nav-link">Discography</a>
+        <a href="live.html" class="header__nav-link">Live</a>
+        <a href="profile.html" class="header__nav-link">Profile</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="discography.html" class="mobile-menu__link">Discography</a>
+    <a href="live.html" class="mobile-menu__link">Live</a>
+    <a href="profile.html" class="mobile-menu__link">Profile</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <div class="page-wrap" id="pageWrap">
+  <main>
+
+    <div class="page-hero">
+      <h1 class="page-hero__title">CONTACT</h1>
+      <p class="page-hero__subtitle">Message · Fan Letter</p>
+    </div>
+
+    <section class="section contact-music-section">
+
+      <div class="contact-music-layout">
+
+        <!-- Info -->
+        <div class="contact-music-info reveal">
+          <h2 class="contact-music-info__title">
+            あなたの言葉が<br>
+            <span class="gradient-text">SORAに届く。</span>
+          </h2>
+          <p class="contact-music-info__desc">
+            ライブのご感想、楽曲への想い、お仕事のご依頼など、
+            何でもお気軽にメッセージをお送りください。
+            ファンレターも大歓迎です。
+          </p>
+
+          <ul class="contact-music-types">
+            <li class="contact-music-types__item">
+              <span class="contact-music-types__icon gradient-text">♥</span>
+              <div>
+                <p class="contact-music-types__label">Fan Message</p>
+                <p class="contact-music-types__desc">ライブ・楽曲の感想など</p>
+              </div>
+            </li>
+            <li class="contact-music-types__item">
+              <span class="contact-music-types__icon gradient-text">◎</span>
+              <div>
+                <p class="contact-music-types__label">Business</p>
+                <p class="contact-music-types__desc">タイアップ・楽曲提供のご相談</p>
+              </div>
+            </li>
+            <li class="contact-music-types__item">
+              <span class="contact-music-types__icon gradient-text">✉</span>
+              <div>
+                <p class="contact-music-types__label">Media</p>
+                <p class="contact-music-types__desc">取材・インタビューのご依頼</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-music-form reveal reveal-delay-1">
+          <form id="contactForm" novalidate>
+
+            <div class="form__group">
+              <label class="form__label" for="name">
+                お名前 <span>*</span>
+              </label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="山田 花子" required>
+              <span class="form__error" id="nameError"></span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="email">
+                メールアドレス <span>*</span>
+              </label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="hanako@example.com" required>
+              <span class="form__error" id="emailError"></span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="category">
+                カテゴリ <span>*</span>
+              </label>
+              <select class="form__select" id="category" name="category" required>
+                <option value="">選択してください</option>
+                <option value="fan">ファンメッセージ・感想</option>
+                <option value="business">ビジネスのご相談</option>
+                <option value="media">メディア・取材</option>
+                <option value="ticket">チケットについて</option>
+                <option value="other">その他</option>
+              </select>
+              <span class="form__error" id="categoryError"></span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message">
+                メッセージ <span>*</span>
+              </label>
+              <textarea class="form__textarea" id="message" name="message" placeholder="SORAへのメッセージをどうぞ..." rows="6" required></textarea>
+              <span class="form__error" id="messageError"></span>
+            </div>
+
+            <button class="btn btn--primary contact-music-submit" type="submit" id="submitBtn">
+              Send Message →
+            </button>
+
+          </form>
+
+          <div class="contact-music-success" id="formSuccess" aria-live="polite">
+            <div class="contact-music-success__icon gradient-text">✓</div>
+            <h3 class="contact-music-success__title">Thank you!</h3>
+            <p class="contact-music-success__text">メッセージを受け取りました。<br>SORAより想いを込めてご返信します。</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__logo">SORA</p>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__nav-link">Home</a>
+        <a href="discography.html" class="footer__nav-link">Discography</a>
+        <a href="live.html" class="footer__nav-link">Live</a>
+        <a href="profile.html" class="footer__nav-link">Profile</a>
+        <a href="contact.html" class="footer__nav-link">Contact</a>
+      </nav>
+      <div class="footer__sns">
+        <a href="#" class="footer__sns-link" aria-label="Twitter">𝕏</a>
+        <a href="#" class="footer__sns-link" aria-label="Instagram">◎</a>
+        <a href="#" class="footer__sns-link" aria-label="YouTube">▶</a>
+      </div>
+      <p class="footer__copy">&copy; 2024 SORA. All rights reserved.</p>
+    </div>
+  </footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

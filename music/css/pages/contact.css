@@ -1,0 +1,128 @@
+/* ============================================================
+   SORA - Contact Page Styles
+   ============================================================ */
+
+.contact-music-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --- Layout --- */
+.contact-music-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* --- Info Panel --- */
+.contact-music-info__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.contact-music-info__desc {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+
+.contact-music-types {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-music-types__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contact-music-types__icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.contact-music-types__label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-white);
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+
+.contact-music-types__desc {
+  font-size: 0.8rem;
+  color: var(--color-gray);
+}
+
+/* --- Form --- */
+.contact-music-form {
+  padding: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.contact-music-submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 16px 32px;
+  font-size: 0.9rem;
+  border-radius: 40px;
+}
+
+/* --- Success --- */
+.contact-music-success {
+  display: none;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.contact-music-success.is-visible {
+  display: block;
+}
+
+.contact-music-success__icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  display: block;
+  filter: drop-shadow(0 0 20px rgba(123, 47, 247, 0.8));
+}
+
+.contact-music-success__title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
+.contact-music-success__text {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-music-layout {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-music-form {
+    padding: 24px 20px;
+  }
+}

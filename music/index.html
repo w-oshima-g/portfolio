@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SORA — 音楽アーティスト。幻想的なサウンドスケープで心を揺さぶる。">
+  <title>SORA | Official Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Page Transition -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">SORA</a>
+
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="discography.html" class="header__nav-link">Discography</a>
+        <a href="live.html" class="header__nav-link">Live</a>
+        <a href="profile.html" class="header__nav-link">Profile</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+
+      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="discography.html" class="mobile-menu__link">Discography</a>
+    <a href="live.html" class="mobile-menu__link">Live</a>
+    <a href="profile.html" class="mobile-menu__link">Profile</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <div class="page-wrap" id="pageWrap">
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-index" id="hero">
+      <div class="hero-index__bg">
+        <div class="hero-index__orb hero-index__orb--1"></div>
+        <div class="hero-index__orb hero-index__orb--2"></div>
+        <div class="hero-index__orb hero-index__orb--3"></div>
+      </div>
+
+      <div class="hero-index__content">
+        <p class="hero-index__label reveal">Music Artist</p>
+        <h1 class="hero-index__name reveal reveal-delay-1">SORA</h1>
+        <p class="hero-index__tagline reveal reveal-delay-2">
+          音と光の境界で<br>あなたの心に触れる
+        </p>
+        <div class="hero-index__ctas reveal reveal-delay-3">
+          <a href="discography.html" class="btn btn--primary">Discography</a>
+          <a href="live.html" class="btn btn--outline">Live Info</a>
+        </div>
+      </div>
+
+      <div class="hero-index__scroll" aria-hidden="true">
+        <div class="hero-index__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== LATEST ========== -->
+    <section class="section latest-section" id="latest">
+      <span class="section__label">Latest</span>
+      <h2 class="section__title gradient-text reveal">最新情報</h2>
+
+      <div class="latest-grid">
+
+        <article class="latest-card gradient-border reveal">
+          <div class="latest-card__badge">New Release</div>
+          <div class="latest-card__art latest-card__art--release">
+            <div class="latest-card__art-inner"></div>
+          </div>
+          <div class="latest-card__body">
+            <p class="latest-card__date">2024.12.18</p>
+            <h3 class="latest-card__title">3rd Album「AURORA」リリース</h3>
+            <p class="latest-card__desc">待望の3rdアルバムが配信スタート。全12曲、SORAの世界観が凝縮された作品です。</p>
+            <a href="discography.html" class="btn btn--primary" style="margin-top:20px;padding:10px 24px;font-size:0.8rem;">Listen Now →</a>
+          </div>
+        </article>
+
+        <article class="latest-card gradient-border reveal reveal-delay-1">
+          <div class="latest-card__badge latest-card__badge--live">Live</div>
+          <div class="latest-card__body latest-card__body--full">
+            <p class="latest-card__date">2025.03.15</p>
+            <h3 class="latest-card__title">SORA LIVE TOUR 2025</h3>
+            <p class="latest-card__desc">全国6都市を巡るワンマンライブツアーが決定。チケット先行発売は1月から。</p>
+            <a href="live.html" class="btn btn--outline" style="margin-top:20px;padding:10px 24px;font-size:0.8rem;">Live Info →</a>
+          </div>
+        </article>
+
+        <article class="latest-card gradient-border reveal reveal-delay-2">
+          <div class="latest-card__body latest-card__body--full">
+            <p class="latest-card__date">2024.11.30</p>
+            <h3 class="latest-card__title">MV「NOVA」公開</h3>
+            <p class="latest-card__desc">「AURORA」収録曲「NOVA」のミュージックビデオが解禁。幻想的な映像世界をお楽しみください。</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== PICKUP TRACK ========== -->
+    <section class="section pickup-section" id="pickup">
+      <span class="section__label">Featured Track</span>
+      <h2 class="section__title reveal">ピックアップ</h2>
+
+      <div class="pickup-player reveal">
+        <div class="pickup-player__art">
+          <div class="pickup-player__art-bg"></div>
+          <div class="pickup-player__art-glow"></div>
+          <div class="pickup-player__art-center">
+            <span class="pickup-player__art-icon">♪</span>
+          </div>
+        </div>
+        <div class="pickup-player__info">
+          <p class="pickup-player__album">AURORA — Track 01</p>
+          <h3 class="pickup-player__title">NOVA</h3>
+          <p class="pickup-player__desc">
+            「AURORA」のリードトラック。夜空に輝く星の光をインスパイアした、
+            壮大なシンセポップナンバー。サビの転調が心を揺さぶる一曲。
+          </p>
+          <div class="pickup-player__waveform" aria-hidden="true">
+            <div class="pickup-player__bar" style="--h:40%"></div>
+            <div class="pickup-player__bar" style="--h:70%"></div>
+            <div class="pickup-player__bar" style="--h:55%"></div>
+            <div class="pickup-player__bar" style="--h:90%"></div>
+            <div class="pickup-player__bar" style="--h:65%"></div>
+            <div class="pickup-player__bar" style="--h:80%"></div>
+            <div class="pickup-player__bar" style="--h:45%"></div>
+            <div class="pickup-player__bar" style="--h:75%"></div>
+            <div class="pickup-player__bar" style="--h:60%"></div>
+            <div class="pickup-player__bar" style="--h:85%"></div>
+            <div class="pickup-player__bar" style="--h:50%"></div>
+            <div class="pickup-player__bar" style="--h:70%"></div>
+            <div class="pickup-player__bar" style="--h:95%"></div>
+            <div class="pickup-player__bar" style="--h:60%"></div>
+            <div class="pickup-player__bar" style="--h:78%"></div>
+            <div class="pickup-player__bar" style="--h:40%"></div>
+            <div class="pickup-player__bar" style="--h:65%"></div>
+            <div class="pickup-player__bar" style="--h:55%"></div>
+            <div class="pickup-player__bar" style="--h:80%"></div>
+            <div class="pickup-player__bar" style="--h:45%"></div>
+          </div>
+          <div class="pickup-player__links">
+            <a href="discography.html" class="btn btn--primary">Stream Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__logo">SORA</p>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__nav-link">Home</a>
+        <a href="discography.html" class="footer__nav-link">Discography</a>
+        <a href="live.html" class="footer__nav-link">Live</a>
+        <a href="profile.html" class="footer__nav-link">Profile</a>
+        <a href="contact.html" class="footer__nav-link">Contact</a>
+      </nav>
+      <div class="footer__sns">
+        <a href="#" class="footer__sns-link" aria-label="Twitter">𝕏</a>
+        <a href="#" class="footer__sns-link" aria-label="Instagram">◎</a>
+        <a href="#" class="footer__sns-link" aria-label="YouTube">▶</a>
+      </div>
+      <p class="footer__copy">&copy; 2024 SORA. All rights reserved.</p>
+    </div>
+  </footer>
+  </div><!-- /.page-wrap -->
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

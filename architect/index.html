@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FORM architects — 建築の本質を追求する設計事務所。住宅・商業施設・公共建築を手掛けます。">
+  <title>FORM architects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        FORM
+        <span>architects</span>
+      </a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="header__nav-link">Index</a>
+        <a href="works.html" class="header__nav-link">Works</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Index</a>
+    <a href="works.html" class="mobile-menu__link">Works</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-top" id="hero">
+      <div class="hero-top__media">
+        <img
+          src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&auto=format&fit=crop&q=80"
+          alt="建築外観"
+          class="hero-top__img"
+          loading="eager"
+        >
+        <div class="hero-top__overlay"></div>
+      </div>
+
+      <div class="hero-top__content container">
+        <p class="hero-top__num">001</p>
+        <h1 class="hero-top__title">
+          FORM<br>FOLLOWS<br>FUNCTION.
+        </h1>
+        <p class="hero-top__sub reveal">建築の本質を追求する。</p>
+        <a href="works.html" class="btn reveal reveal--delay-1">
+          View Works <span class="btn__arrow">→</span>
+        </a>
+      </div>
+
+      <div class="hero-top__scroll" aria-hidden="true">
+        <div class="hero-top__scroll-line"></div>
+        <span class="hero-top__scroll-text">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ========== PHILOSOPHY ========== -->
+    <section class="philosophy" id="philosophy">
+      <div class="container">
+        <div class="philosophy__layout">
+          <div class="philosophy__left reveal reveal--left">
+            <p class="section-label">Philosophy</p>
+            <h2 class="section-title">
+              素材と空間の<br>対話を設計する。
+            </h2>
+          </div>
+          <div class="philosophy__right reveal reveal--right">
+            <p class="philosophy__text">
+              FORM architects は、機能美と空間の詩学を追求する設計事務所です。
+              クライアントの本質的なニーズを読み解き、時代を超えて愛される建築を生み出します。
+            </p>
+            <p class="philosophy__text">
+              素材の持つ力、光の変化、人の動きを統合し、建築を通じて新たな体験を創出します。
+              すべてのプロジェクトに真摯に向き合い、細部まで丁寧に設計します。
+            </p>
+            <div class="philosophy__stats">
+              <div class="philosophy__stat">
+                <span class="philosophy__stat-num">120+</span>
+                <span class="philosophy__stat-label">Projects</span>
+              </div>
+              <div class="philosophy__stat">
+                <span class="philosophy__stat-num">18</span>
+                <span class="philosophy__stat-label">Years</span>
+              </div>
+              <div class="philosophy__stat">
+                <span class="philosophy__stat-num">12</span>
+                <span class="philosophy__stat-label">Awards</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services-top" id="services">
+      <div class="container">
+        <div class="services-top__head">
+          <p class="section-label reveal">Services</p>
+          <h2 class="section-title reveal reveal--delay-1">事業領域</h2>
+        </div>
+        <div class="grid-3 services-top__grid">
+          <article class="service-item reveal">
+            <p class="service-item__num">01</p>
+            <h3 class="service-item__title">住宅設計</h3>
+            <p class="service-item__desc">個人邸宅から集合住宅まで、住む人の暮らしに根ざした空間を設計します。</p>
+          </article>
+          <article class="service-item reveal reveal--delay-1">
+            <p class="service-item__num">02</p>
+            <h3 class="service-item__title">商業施設</h3>
+            <p class="service-item__desc">店舗・オフィス・ホテルなど、ビジネスの目的を建築で体現します。</p>
+          </article>
+          <article class="service-item reveal reveal--delay-2">
+            <p class="service-item__num">03</p>
+            <h3 class="service-item__title">公共建築</h3>
+            <p class="service-item__desc">社会インフラとしての建築。持続可能性と公共性を両立します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WORKS PICKUP ========== -->
+    <section class="works-pickup" id="works-pickup">
+      <div class="container">
+        <div class="works-pickup__head">
+          <p class="section-label reveal">Selected Works</p>
+          <div class="works-pickup__head-row">
+            <h2 class="section-title reveal reveal--delay-1">実績ピックアップ</h2>
+            <a href="works.html" class="btn reveal reveal--delay-2">All Works <span class="btn__arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="works-pickup__grid">
+          <article class="pickup-card pickup-card--large reveal">
+            <a href="works-detail.html" class="pickup-card__link">
+              <div class="pickup-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1524230572899-a752b3835840?w=1000&auto=format&fit=crop&q=80"
+                  alt="Nishikawa House"
+                  class="pickup-card__img"
+                  loading="lazy"
+                >
+              </div>
+              <div class="pickup-card__info">
+                <span class="pickup-card__category">Residential</span>
+                <h3 class="pickup-card__title">Nishikawa House</h3>
+                <p class="pickup-card__meta">Tokyo, 2023</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="pickup-card reveal reveal--delay-1">
+            <a href="works.html" class="pickup-card__link">
+              <div class="pickup-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&auto=format&fit=crop&q=80"
+                  alt="KAZE Office"
+                  class="pickup-card__img"
+                  loading="lazy"
+                >
+              </div>
+              <div class="pickup-card__info">
+                <span class="pickup-card__category">Commercial</span>
+                <h3 class="pickup-card__title">KAZE Office</h3>
+                <p class="pickup-card__meta">Osaka, 2022</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="pickup-card reveal reveal--delay-2">
+            <a href="works.html" class="pickup-card__link">
+              <div class="pickup-card__img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1548199326-03c0bd70a2fc?w=700&auto=format&fit=crop&q=80"
+                  alt="Minato Library"
+                  class="pickup-card__img"
+                  loading="lazy"
+                >
+              </div>
+              <div class="pickup-card__info">
+                <span class="pickup-card__category">Public</span>
+                <h3 class="pickup-card__title">Minato Library</h3>
+                <p class="pickup-card__meta">Yokohama, 2021</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__brand-name">FORM</p>
+          <p class="footer__brand-sub">architects</p>
+          <p class="footer__tagline">建築の本質を追求する設計事務所。<br>1階から屋上まで、すべてに意味を。</p>
+        </div>
+        <div>
+          <p class="footer__heading">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Contact</p>
+          <address class="footer__address">
+            〒100-0001<br>
+            東京都千代田区千代田 1-1<br>
+            アーキビル 5F<br>
+            <br>
+            03-9876-5432<br>
+            info@form-architects.jp
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 FORM architects. All rights reserved.</p>
+        <p class="footer__note">Design &amp; Architecture</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Takuya Nishida — Freelance Software Engineer. Webアプリ・APIの設計から実装まで対応します。">
+  <title>Takuya Nishida | Freelance Software Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo">
+        <span class="header__logo-prompt">&gt;</span>
+        <span class="header__logo-name">takuya.nishida</span>
+        <span class="header__logo-cursor">_</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#skills" class="nav__link">// Skills</a></li>
+          <li class="nav__item"><a href="#works" class="nav__link">// Works</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">// Contact</a></li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__cta btn btn--sm">Hire Me</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="#skills" class="mobile-menu__link" data-close-menu>
+            <span class="mobile-menu__number">01.</span> Skills
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#works" class="mobile-menu__link" data-close-menu>
+            <span class="mobile-menu__number">02.</span> Works
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#contact" class="mobile-menu__link" data-close-menu>
+            <span class="mobile-menu__number">03.</span> Contact
+          </a>
+        </li>
+      </ul>
+      <a href="#contact" class="btn btn--primary mobile-menu__cta" data-close-menu>Hire Me</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <!-- CSS grid background via ::before -->
+
+      <!-- Floating code decorations -->
+      <div class="hero__code-deco hero__code-deco--tl" aria-hidden="true">
+        <pre class="code-snippet">
+<span class="code-snippet__keyword">const</span> <span class="code-snippet__var">dev</span> = {
+  <span class="code-snippet__key">name</span>: <span class="code-snippet__str">"Takuya"</span>,
+  <span class="code-snippet__key">role</span>: <span class="code-snippet__str">"Engineer"</span>,
+  <span class="code-snippet__key">available</span>: <span class="code-snippet__bool">true</span>
+};</pre>
+      </div>
+
+      <div class="hero__code-deco hero__code-deco--br" aria-hidden="true">
+        <pre class="code-snippet">
+<span class="code-snippet__comment">// Stack</span>
+<span class="code-snippet__keyword">import</span> React <span class="code-snippet__keyword">from</span> <span class="code-snippet__str">'react'</span>;
+<span class="code-snippet__keyword">import</span> { api } <span class="code-snippet__keyword">from</span> <span class="code-snippet__str">'./lib'</span>;
+<span class="code-snippet__keyword">export</span> <span class="code-snippet__keyword">default</span> App;</pre>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__greeting">
+          <span class="hero__prompt">&gt;</span>
+          <span class="hero__greeting-text">Hello, I'm</span>
+        </p>
+
+        <h1 class="hero__name" id="heroName" aria-label="Takuya Nishida">
+          <span class="hero__name-text" id="heroNameText"></span><span class="hero__cursor" id="heroCursor">|</span>
+        </h1>
+
+        <p class="hero__title">Freelance Software Engineer</p>
+
+        <p class="hero__sub">Webアプリ・APIの設計から実装まで</p>
+
+        <div class="hero__ctas">
+          <a href="#works" class="btn btn--primary btn--lg">
+            <span class="btn__icon">▶</span> View Works
+          </a>
+          <a href="#contact" class="btn btn--outline btn--lg">Contact</a>
+        </div>
+
+        <!-- Terminal output decoration -->
+        <div class="hero__terminal" aria-hidden="true">
+          <div class="terminal terminal--mini">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+              <span class="terminal__bar-title">bash — 80×24</span>
+            </div>
+            <div class="terminal__body">
+              <p class="terminal__line"><span class="terminal__prompt">$</span> git status</p>
+              <p class="terminal__line terminal__line--output">On branch main — all commits clean</p>
+              <p class="terminal__line"><span class="terminal__prompt">$</span> npm run dev</p>
+              <p class="terminal__line terminal__line--success">✓ Server running on http://localhost:3000</p>
+              <p class="terminal__line terminal__line--cyan"><span class="terminal__prompt">$</span> <span class="terminal__blink">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <p class="section__label">02</p>
+          <h2 class="section__title">
+            <span class="text--comment">// </span>Skills
+          </h2>
+          <p class="section__desc">現在得意としている技術スタックです。常に新しい技術のキャッチアップを心がけています。</p>
+        </div>
+
+        <div class="skills__grid">
+
+          <!-- Frontend -->
+          <div class="skills__group reveal">
+            <div class="terminal terminal--skill">
+              <div class="terminal__bar">
+                <span class="terminal__dot terminal__dot--red"></span>
+                <span class="terminal__dot terminal__dot--yellow"></span>
+                <span class="terminal__dot terminal__dot--green"></span>
+                <span class="terminal__bar-title">frontend.sh</span>
+              </div>
+              <div class="terminal__body">
+                <p class="terminal__line terminal__line--comment"><span class="terminal__prompt">$</span> cat frontend_skills.txt</p>
+              </div>
+            </div>
+
+            <h3 class="skills__group-title">
+              <span class="text--cyan">&lt;</span>Frontend<span class="text--cyan">/&gt;</span>
+            </h3>
+
+            <ul class="skills__list">
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">React</span>
+                  <span class="skills__level">95%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="95" style="--target-width: 95%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">TypeScript</span>
+                  <span class="skills__level">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="90" style="--target-width: 90%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">Next.js</span>
+                  <span class="skills__level">88%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="88" style="--target-width: 88%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">Vue.js</span>
+                  <span class="skills__level">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="80" style="--target-width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">CSS / SCSS</span>
+                  <span class="skills__level">92%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="92" style="--target-width: 92%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">Figma</span>
+                  <span class="skills__level">75%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="75" style="--target-width: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Backend -->
+          <div class="skills__group reveal">
+            <div class="terminal terminal--skill">
+              <div class="terminal__bar">
+                <span class="terminal__dot terminal__dot--red"></span>
+                <span class="terminal__dot terminal__dot--yellow"></span>
+                <span class="terminal__dot terminal__dot--green"></span>
+                <span class="terminal__bar-title">backend.sh</span>
+              </div>
+              <div class="terminal__body">
+                <p class="terminal__line terminal__line--comment"><span class="terminal__prompt">$</span> cat backend_skills.txt</p>
+              </div>
+            </div>
+
+            <h3 class="skills__group-title">
+              <span class="text--green">_</span>Backend
+            </h3>
+
+            <ul class="skills__list">
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">Node.js</span>
+                  <span class="skills__level">92%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill skills__bar-fill--green" data-width="92" style="--target-width: 92%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">Python</span>
+                  <span class="skills__level">85%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill skills__bar-fill--green" data-width="85" style="--target-width: 85%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">PostgreSQL</span>
+                  <span class="skills__level">88%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill skills__bar-fill--green" data-width="88" style="--target-width: 88%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">Redis</span>
+                  <span class="skills__level">78%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill skills__bar-fill--green" data-width="78" style="--target-width: 78%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">Docker</span>
+                  <span class="skills__level">83%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill skills__bar-fill--green" data-width="83" style="--target-width: 83%"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__item-header">
+                  <span class="skills__name">AWS</span>
+                  <span class="skills__level">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill skills__bar-fill--green" data-width="80" style="--target-width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div><!-- /.skills__grid -->
+
+        <!-- npm run dev terminal decoration -->
+        <div class="skills__terminal-deco reveal">
+          <div class="terminal terminal--output">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+              <span class="terminal__bar-title">~/projects/app — npm run dev</span>
+            </div>
+            <div class="terminal__body">
+              <p class="terminal__line"><span class="terminal__prompt">$</span> npm run dev</p>
+              <p class="terminal__line terminal__line--output">&gt; app@1.0.0 dev</p>
+              <p class="terminal__line terminal__line--output">&gt; next dev</p>
+              <p class="terminal__line terminal__line--blank">&nbsp;</p>
+              <p class="terminal__line terminal__line--cyan">  ▲ Next.js 14.0.0</p>
+              <p class="terminal__line terminal__line--cyan">  - Local: http://localhost:3000</p>
+              <p class="terminal__line terminal__line--cyan">  - Network: http://192.168.1.5:3000</p>
+              <p class="terminal__line terminal__line--blank">&nbsp;</p>
+              <p class="terminal__line terminal__line--success"> ✓ Ready in 847ms</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== WORKS ========== -->
+    <section class="works section" id="works">
+      <div class="container">
+
+        <div class="section__header reveal">
+          <p class="section__label">03</p>
+          <h2 class="section__title">
+            <span class="text--comment">// </span>Works
+          </h2>
+          <p class="section__desc">これまでに開発した主なプロジェクトです。すべてフルスタックで設計・実装しました。</p>
+        </div>
+
+        <div class="works__grid">
+
+          <!-- Card 1 -->
+          <article class="card reveal" data-delay="0">
+            <div class="card__terminal-bar">
+              <span class="card__dot card__dot--red"></span>
+              <span class="card__dot card__dot--yellow"></span>
+              <span class="card__dot card__dot--green"></span>
+              <span class="card__terminal-title">task-manager/</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Task管理アプリ</h3>
+              <p class="card__desc">チーム向けのリアルタイムタスク管理アプリ。ドラッグ&ドロップでのカンバン操作、メンション機能、通知システムを実装。</p>
+              <ul class="card__tags">
+                <li class="card__tag card__tag--cyan">React</li>
+                <li class="card__tag card__tag--cyan">Node.js</li>
+                <li class="card__tag">Socket.io</li>
+                <li class="card__tag">MongoDB</li>
+              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="card__link">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="card__link card__link--primary">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card reveal" data-delay="100">
+            <div class="card__terminal-bar">
+              <span class="card__dot card__dot--red"></span>
+              <span class="card__dot card__dot--yellow"></span>
+              <span class="card__dot card__dot--green"></span>
+              <span class="card__terminal-title">ec-api/</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">ECサイトAPI</h3>
+              <p class="card__desc">RESTful API設計によるECプラットフォームのバックエンド。決済連携（Stripe）、在庫管理、注文追跡システムを含む。</p>
+              <ul class="card__tags">
+                <li class="card__tag card__tag--green">Node.js</li>
+                <li class="card__tag card__tag--green">PostgreSQL</li>
+                <li class="card__tag">Stripe</li>
+                <li class="card__tag">Docker</li>
+              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="card__link">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="card__link card__link--primary">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card reveal" data-delay="200">
+            <div class="card__terminal-bar">
+              <span class="card__dot card__dot--red"></span>
+              <span class="card__dot card__dot--yellow"></span>
+              <span class="card__dot card__dot--green"></span>
+              <span class="card__terminal-title">dashboard-ui/</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">ダッシュボードUI</h3>
+              <p class="card__desc">SaaS向けアナリティクスダッシュボード。リアルタイムグラフ、カスタムウィジェット、ダークモード対応のUIコンポーネント群。</p>
+              <ul class="card__tags">
+                <li class="card__tag card__tag--cyan">Vue.js</li>
+                <li class="card__tag card__tag--cyan">TypeScript</li>
+                <li class="card__tag">Chart.js</li>
+                <li class="card__tag">Pinia</li>
+              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="card__link">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="card__link card__link--primary">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card reveal" data-delay="0">
+            <div class="card__terminal-bar">
+              <span class="card__dot card__dot--red"></span>
+              <span class="card__dot card__dot--yellow"></span>
+              <span class="card__dot card__dot--green"></span>
+              <span class="card__terminal-title">image-converter/</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">画像変換サービス</h3>
+              <p class="card__desc">サーバレスアーキテクチャによる画像変換・最適化API。WebP変換、リサイズ、メタデータ除去をAWS Lambda上で処理。</p>
+              <ul class="card__tags">
+                <li class="card__tag card__tag--green">Python</li>
+                <li class="card__tag card__tag--green">AWS Lambda</li>
+                <li class="card__tag">S3</li>
+                <li class="card__tag">API Gateway</li>
+              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="card__link">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="card__link card__link--primary">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card reveal" data-delay="100">
+            <div class="card__terminal-bar">
+              <span class="card__dot card__dot--red"></span>
+              <span class="card__dot card__dot--yellow"></span>
+              <span class="card__dot card__dot--green"></span>
+              <span class="card__terminal-title">chat-app/</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">チャットアプリ</h3>
+              <p class="card__desc">WebSocketを使ったリアルタイムチャットアプリ。ルーム機能、ファイル共有、既読管理、プッシュ通知に対応。</p>
+              <ul class="card__tags">
+                <li class="card__tag card__tag--cyan">React</li>
+                <li class="card__tag card__tag--green">Socket.io</li>
+                <li class="card__tag">Redis</li>
+                <li class="card__tag">Node.js</li>
+              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="card__link">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="card__link card__link--primary">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card reveal" data-delay="200">
+            <div class="card__terminal-bar">
+              <span class="card__dot card__dot--red"></span>
+              <span class="card__dot card__dot--yellow"></span>
+              <span class="card__dot card__dot--green"></span>
+              <span class="card__terminal-title">tech-blog/</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">技術ブログ</h3>
+              <p class="card__desc">Markdownベースの技術ブログプラットフォーム。MDXによるインタラクティブコンポーネント埋め込み、全文検索、RSSフィード対応。</p>
+              <ul class="card__tags">
+                <li class="card__tag card__tag--cyan">Next.js</li>
+                <li class="card__tag card__tag--cyan">MDX</li>
+                <li class="card__tag">Vercel</li>
+                <li class="card__tag">TypeScript</li>
+              </ul>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="card__link">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="card__link card__link--primary">
+                <svg class="card__link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /.works__grid -->
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact">
+      <div class="container container--narrow">
+
+        <div class="section__header reveal">
+          <p class="section__label">04</p>
+          <h2 class="section__title">
+            <span class="text--comment">// </span>Contact
+          </h2>
+          <p class="section__desc">お仕事のご依頼・ご相談はお気軽にどうぞ。通常2営業日以内にご返信いたします。</p>
+        </div>
+
+        <div class="contact__grid">
+
+          <div class="contact__form-wrap reveal">
+            <div class="terminal terminal--form">
+              <div class="terminal__bar">
+                <span class="terminal__dot terminal__dot--red"></span>
+                <span class="terminal__dot terminal__dot--yellow"></span>
+                <span class="terminal__dot terminal__dot--green"></span>
+                <span class="terminal__bar-title">contact.sh</span>
+              </div>
+              <div class="terminal__body terminal__body--form">
+                <p class="terminal__line terminal__line--comment"># Fill in the form below and hit send</p>
+                <p class="terminal__line terminal__line--blank">&nbsp;</p>
+              </div>
+            </div>
+
+            <form class="contact__form" id="contactForm" novalidate>
+              <div class="form__group">
+                <label class="form__label" for="name">
+                  <span class="form__label-prompt">&gt;</span> name
+                </label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Yamada Taro"
+                  autocomplete="name"
+                  required
+                >
+                <p class="form__error" id="nameError" role="alert"></p>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="email">
+                  <span class="form__label-prompt">&gt;</span> email
+                </label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="hello@example.com"
+                  autocomplete="email"
+                  required
+                >
+                <p class="form__error" id="emailError" role="alert"></p>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="message">
+                  <span class="form__label-prompt">&gt;</span> message
+                </label>
+                <textarea
+                  class="form__input form__textarea"
+                  id="message"
+                  name="message"
+                  placeholder="ご依頼内容・ご質問をご記入ください..."
+                  rows="6"
+                  required
+                ></textarea>
+                <p class="form__error" id="messageError" role="alert"></p>
+              </div>
+
+              <div class="form__submit-wrap">
+                <button class="btn btn--primary btn--lg form__submit" type="submit" id="formSubmit">
+                  <span class="form__submit-text">Send Message</span>
+                  <span class="form__submit-icon">→</span>
+                </button>
+              </div>
+
+              <!-- Terminal feedback -->
+              <div class="form__feedback" id="formFeedback" aria-live="polite">
+                <div class="terminal terminal--feedback">
+                  <div class="terminal__bar">
+                    <span class="terminal__dot terminal__dot--red"></span>
+                    <span class="terminal__dot terminal__dot--yellow"></span>
+                    <span class="terminal__dot terminal__dot--green"></span>
+                    <span class="terminal__bar-title">response</span>
+                  </div>
+                  <div class="terminal__body" id="formFeedbackBody">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Contact info sidebar -->
+          <div class="contact__info reveal">
+            <div class="contact__info-block">
+              <h3 class="contact__info-title">
+                <span class="text--cyan">&gt;</span> Status
+              </h3>
+              <p class="contact__status">
+                <span class="contact__status-dot"></span>
+                Available for freelance work
+              </p>
+            </div>
+
+            <div class="contact__info-block">
+              <h3 class="contact__info-title">
+                <span class="text--cyan">&gt;</span> Response Time
+              </h3>
+              <p class="contact__info-text">通常2営業日以内</p>
+            </div>
+
+            <div class="contact__info-block">
+              <h3 class="contact__info-title">
+                <span class="text--cyan">&gt;</span> Location
+              </h3>
+              <p class="contact__info-text">Tokyo, Japan (Remote OK)</p>
+            </div>
+
+            <div class="contact__socials">
+              <h3 class="contact__info-title">
+                <span class="text--cyan">&gt;</span> Find me on
+              </h3>
+              <div class="socials">
+                <a href="#" class="socials__link" aria-label="GitHub">
+                  <svg class="socials__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="#" class="socials__link" aria-label="Twitter / X">
+                  <svg class="socials__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  <span>Twitter</span>
+                </a>
+                <a href="#" class="socials__link" aria-label="LinkedIn">
+                  <svg class="socials__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.contact__grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">
+          <span class="text--comment">// </span>
+          &copy; 2024 Takuya Nishida. Built with ❤️ &amp; coffee.
+        </p>
+        <a href="#hero" class="footer__back-top" aria-label="ページトップへ">
+          <span class="footer__back-top-arrow">↑</span>
+          <span>Back to top</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

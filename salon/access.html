@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BLANC HAIR — アクセス・営業時間。渋谷区神宮前。">
+  <title>Access | BLANC HAIR</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-main">Blanc Hair</span>
+        <span class="header__logo-sub">Beauty Salon</span>
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="nav__link">Top</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="staff.html" class="nav__link">Staff</a>
+        <a href="access.html" class="nav__link">Access</a>
+        <a href="contact.html" class="nav__link btn btn--gold">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" role="dialog" aria-label="モバイルメニュー">
+    <span class="mobile-menu__logo">Blanc Hair</span>
+    <ul class="mobile-menu__list">
+      <li><a href="index.html" class="mobile-menu__link">Top</a></li>
+      <li><a href="menu.html" class="mobile-menu__link">Menu</a></li>
+      <li><a href="staff.html" class="mobile-menu__link">Staff</a></li>
+      <li><a href="access.html" class="mobile-menu__link">Access</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+    <p class="mobile-menu__footer">© 2024 Blanc Hair</p>
+  </div>
+
+  <main>
+
+    <div class="page-hero">
+      <span class="page-hero__label">Access</span>
+      <h1 class="page-hero__title">Access</h1>
+      <p class="page-hero__desc">〒150-0001 東京都渋谷区神宮前 1-2-3</p>
+    </div>
+
+    <section class="section">
+      <div class="section__inner access-layout">
+
+        <!-- Map -->
+        <div class="access-map reveal">
+          <div class="access-map__placeholder">
+            <div class="access-map__inner">
+              <div class="access-map__pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <p class="access-map__label">Blanc Hair</p>
+              <p class="access-map__address">東京都渋谷区神宮前 1-2-3</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="access-info reveal reveal--delay-1">
+
+          <div class="access-info__block">
+            <span class="section-label">Address</span>
+            <div class="gold-divider"></div>
+            <h2 class="access-info__title">住所</h2>
+            <address class="access-info__address">
+              〒150-0001<br>
+              東京都渋谷区神宮前 1-2-3<br>
+              プレミアムビル 2F
+            </address>
+          </div>
+
+          <div class="access-info__block">
+            <span class="section-label">Hours</span>
+            <div class="gold-divider"></div>
+            <h2 class="access-info__title">営業時間</h2>
+            <table class="access-hours">
+              <tbody>
+                <tr>
+                  <th class="access-hours__day">月 〜 火・木 〜 金</th>
+                  <td class="access-hours__time">10:00 – 20:00</td>
+                </tr>
+                <tr>
+                  <th class="access-hours__day">土 〜 日・祝日</th>
+                  <td class="access-hours__time">9:00 – 19:00</td>
+                </tr>
+                <tr class="access-hours__closed">
+                  <th class="access-hours__day">水曜日</th>
+                  <td class="access-hours__time">定休日</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="access-info__block">
+            <span class="section-label">Transit</span>
+            <div class="gold-divider"></div>
+            <h2 class="access-info__title">交通アクセス</h2>
+            <ul class="access-transit">
+              <li class="access-transit__item">
+                <span class="access-transit__line">東京メトロ 千代田線・副都心線</span>
+                <span class="access-transit__station">明治神宮前〈原宿〉駅</span>
+                <span class="access-transit__walk">徒歩 3分</span>
+              </li>
+              <li class="access-transit__item">
+                <span class="access-transit__line">JR山手線</span>
+                <span class="access-transit__station">原宿駅</span>
+                <span class="access-transit__walk">徒歩 7分</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="access-info__block">
+            <span class="section-label">Contact</span>
+            <div class="gold-divider"></div>
+            <h2 class="access-info__title">お電話</h2>
+            <a href="tel:0312345678" class="access-tel">03-1234-5678</a>
+            <p class="access-tel-note">受付時間は営業時間に準じます</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <p class="footer__logo">Blanc Hair</p>
+          <p class="footer__tagline">上質なひとときを、あなたに。</p>
+        </div>
+        <div class="footer__info">
+          <p class="footer__info-item">〒150-0001 東京都渋谷区神宮前 1-2-3 プレミアムビル2F</p>
+          <p class="footer__info-item">TEL: 03-1234-5678</p>
+          <p class="footer__info-item">営業時間: 10:00 – 20:00（水曜定休）</p>
+        </div>
+        <nav class="footer__nav" aria-label="フッターナビゲーション">
+          <a href="index.html" class="footer__nav-link">Top</a>
+          <a href="menu.html" class="footer__nav-link">Menu</a>
+          <a href="staff.html" class="footer__nav-link">Staff</a>
+          <a href="access.html" class="footer__nav-link">Access</a>
+          <a href="contact.html" class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Blanc Hair. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

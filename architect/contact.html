@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FORM architects — お問い合わせ。プロジェクトのご相談はこちら。">
+  <title>Contact | FORM architects</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">FORM <span>architects</span></a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="header__nav-link">Index</a>
+        <a href="works.html" class="header__nav-link">Works</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Index</a>
+    <a href="works.html" class="mobile-menu__link">Works</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <main>
+
+    <div class="page-hero container">
+      <div class="page-hero__inner">
+        <h1 class="page-hero__en">Contact</h1>
+        <p class="page-hero__desc">
+          プロジェクトのご相談・お見積もりは<br>
+          お気軽にご連絡ください。
+        </p>
+      </div>
+    </div>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-section__layout">
+
+          <!-- Info Panel -->
+          <div class="contact-info">
+            <h2 class="contact-info__heading">
+              プロジェクトを<br>一緒に考えましょう。
+            </h2>
+            <p class="contact-info__desc">
+              住宅・商業施設・公共建築のご相談を承っております。
+              初回相談は無料です。お気軽にお問い合わせください。
+            </p>
+            <ul class="contact-info__list">
+              <li class="contact-info__item">
+                <span class="contact-info__label">Address</span>
+                <span class="contact-info__value">〒100-0001 東京都千代田区千代田 1-1 アーキビル 5F</span>
+              </li>
+              <li class="contact-info__item">
+                <span class="contact-info__label">Phone</span>
+                <span class="contact-info__value">
+                  <a href="tel:0398765432">03-9876-5432</a>
+                </span>
+              </li>
+              <li class="contact-info__item">
+                <span class="contact-info__label">Email</span>
+                <span class="contact-info__value">
+                  <a href="mailto:info@form-architects.jp">info@form-architects.jp</a>
+                </span>
+              </li>
+              <li class="contact-info__item">
+                <span class="contact-info__label">Hours</span>
+                <span class="contact-info__value">月〜金 9:00 – 18:00<br>（土日祝休）</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form" id="contactFormWrap">
+            <form id="contactForm" novalidate>
+
+              <div class="form-group">
+                <label class="form-label" for="name">
+                  Name <span class="form-label__required">required</span>
+                </label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Yamada Kenji" required>
+                <p class="form-error-msg">お名前をご入力ください。</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">
+                  Email <span class="form-label__required">required</span>
+                </label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="hello@example.com" required>
+                <p class="form-error-msg">正しいメールアドレスをご入力ください。</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="type">
+                  Project Type <span class="form-label__required">required</span>
+                </label>
+                <select class="form-select" id="type" name="type" required>
+                  <option value="">Select type</option>
+                  <option value="residential">Residential / 住宅</option>
+                  <option value="commercial">Commercial / 商業施設</option>
+                  <option value="public">Public / 公共建築</option>
+                  <option value="renovation">Renovation / リノベーション</option>
+                  <option value="other">Other / その他</option>
+                </select>
+                <p class="form-error-msg">プロジェクト種別を選択してください。</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="budget">Budget</label>
+                <select class="form-select" id="budget" name="budget">
+                  <option value="">Select range</option>
+                  <option value="under50">〜 5,000万円</option>
+                  <option value="50to100">5,000万〜 1億円</option>
+                  <option value="over100">1億円以上</option>
+                  <option value="undecided">未定</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">
+                  Message <span class="form-label__required">required</span>
+                </label>
+                <textarea class="form-textarea" id="message" name="message" placeholder="プロジェクトの概要・敷地情報・ご希望等をご記入ください" rows="6" required></textarea>
+                <p class="form-error-msg">メッセージをご入力ください。</p>
+              </div>
+
+              <div class="contact-form__submit">
+                <p class="contact-form__privacy">
+                  個人情報はプロジェクトのご対応のみに使用します。
+                </p>
+                <button class="btn--submit" type="submit" id="submitBtn">
+                  Send <span>→</span>
+                </button>
+              </div>
+
+            </form>
+
+            <div class="contact-form__success" id="formSuccess">
+              <div class="contact-form__success-icon" aria-hidden="true">✓</div>
+              <h2 class="contact-form__success-title">Sent Successfully</h2>
+              <p class="contact-form__success-text">
+                お問い合わせありがとうございます。<br>
+                3営業日以内にご返信いたします。
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__brand-name">FORM</p>
+          <p class="footer__brand-sub">architects</p>
+          <p class="footer__tagline">建築の本質を追求する設計事務所。</p>
+        </div>
+        <div>
+          <p class="footer__heading">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Contact</p>
+          <address class="footer__address">
+            〒100-0001 東京都千代田区千代田 1-1<br>
+            03-9876-5432
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 FORM architects.</p>
+        <p class="footer__note">Design &amp; Architecture</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

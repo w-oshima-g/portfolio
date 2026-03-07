@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BLANC HAIR — スタッフ紹介。経験豊富なスタイリストが丁寧に対応します。">
+  <title>Staff | BLANC HAIR</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/staff.css">
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-main">Blanc Hair</span>
+        <span class="header__logo-sub">Beauty Salon</span>
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="nav__link">Top</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="staff.html" class="nav__link">Staff</a>
+        <a href="access.html" class="nav__link">Access</a>
+        <a href="contact.html" class="nav__link btn btn--gold">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" role="dialog" aria-label="モバイルメニュー">
+    <span class="mobile-menu__logo">Blanc Hair</span>
+    <ul class="mobile-menu__list">
+      <li><a href="index.html" class="mobile-menu__link">Top</a></li>
+      <li><a href="menu.html" class="mobile-menu__link">Menu</a></li>
+      <li><a href="staff.html" class="mobile-menu__link">Staff</a></li>
+      <li><a href="access.html" class="mobile-menu__link">Access</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+    <p class="mobile-menu__footer">© 2024 Blanc Hair</p>
+  </div>
+
+  <main>
+
+    <div class="page-hero">
+      <span class="page-hero__label">Our Team</span>
+      <h1 class="page-hero__title">Staff</h1>
+      <p class="page-hero__desc">あなたの髪と向き合うプロフェッショナルたち</p>
+    </div>
+
+    <section class="staff-section">
+      <div class="staff-section__inner">
+
+        <div class="staff-grid">
+
+          <!-- スタッフ1 -->
+          <article class="staff-card reveal">
+            <div class="staff-card__image-wrap">
+              <img
+                class="staff-card__image"
+                src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&auto=format&fit=crop&q=80"
+                alt="Yuki Nakamura"
+                loading="lazy"
+              >
+              <span class="staff-card__badge">Director</span>
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__title">Art Director</p>
+              <h3 class="staff-card__name">中村 祐希</h3>
+              <p class="staff-card__name-en">Yuki Nakamura</p>
+              <div class="staff-card__divider"></div>
+              <p class="staff-card__message">
+                「髪は人を語る」という信念のもと、15年の経験を活かして一人ひとりに寄り添うスタイルを提案します。
+              </p>
+              <div class="staff-card__tags">
+                <span class="staff-card__tag">カット</span>
+                <span class="staff-card__tag">カラー</span>
+                <span class="staff-card__tag">パーマ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- スタッフ2 -->
+          <article class="staff-card reveal reveal--delay-1">
+            <div class="staff-card__image-wrap">
+              <img
+                class="staff-card__image"
+                src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&auto=format&fit=crop&q=80"
+                alt="Emi Tanaka"
+                loading="lazy"
+              >
+              <span class="staff-card__badge">Stylist</span>
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__title">Senior Stylist</p>
+              <h3 class="staff-card__name">田中 恵美</h3>
+              <p class="staff-card__name-en">Emi Tanaka</p>
+              <div class="staff-card__divider"></div>
+              <p class="staff-card__message">
+                トレンドを取り入れながら、お客様の日々の生活に溶け込むスタイルを大切にしています。
+              </p>
+              <div class="staff-card__tags">
+                <span class="staff-card__tag">カラー</span>
+                <span class="staff-card__tag">ハイライト</span>
+                <span class="staff-card__tag">縮毛矯正</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- スタッフ3 -->
+          <article class="staff-card reveal reveal--delay-2">
+            <div class="staff-card__image-wrap">
+              <img
+                class="staff-card__image"
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&auto=format&fit=crop&q=80"
+                alt="Kota Yamamoto"
+                loading="lazy"
+              >
+              <span class="staff-card__badge">Stylist</span>
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__title">Stylist</p>
+              <h3 class="staff-card__name">山本 光太</h3>
+              <p class="staff-card__name-en">Kota Yamamoto</p>
+              <div class="staff-card__divider"></div>
+              <p class="staff-card__message">
+                メンズスタイルを得意とし、ビジネスからカジュアルまで幅広い提案が可能です。
+              </p>
+              <div class="staff-card__tags">
+                <span class="staff-card__tag">メンズカット</span>
+                <span class="staff-card__tag">パーマ</span>
+                <span class="staff-card__tag">ヘッドスパ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- スタッフ4 -->
+          <article class="staff-card reveal reveal--delay-3">
+            <div class="staff-card__image-wrap">
+              <img
+                class="staff-card__image"
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80"
+                alt="Saki Ito"
+                loading="lazy"
+              >
+              <span class="staff-card__badge">Colorist</span>
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__title">Color Specialist</p>
+              <h3 class="staff-card__name">伊藤 沙希</h3>
+              <p class="staff-card__name-en">Saki Ito</p>
+              <div class="staff-card__divider"></div>
+              <p class="staff-card__message">
+                カラーを専門とするスペシャリスト。透明感のある発色と頭皮へのやさしさを両立します。
+              </p>
+              <div class="staff-card__tags">
+                <span class="staff-card__tag">カラー全般</span>
+                <span class="staff-card__tag">グレイカラー</span>
+                <span class="staff-card__tag">ブリーチ</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.staff-grid -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <p class="footer__logo">Blanc Hair</p>
+          <p class="footer__tagline">上質なひとときを、あなたに。</p>
+        </div>
+        <div class="footer__info">
+          <p class="footer__info-item">〒150-0001 東京都渋谷区神宮前 1-2-3 プレミアムビル2F</p>
+          <p class="footer__info-item">TEL: 03-1234-5678</p>
+          <p class="footer__info-item">営業時間: 10:00 – 20:00（水曜定休）</p>
+        </div>
+        <nav class="footer__nav" aria-label="フッターナビゲーション">
+          <a href="index.html" class="footer__nav-link">Top</a>
+          <a href="menu.html" class="footer__nav-link">Menu</a>
+          <a href="staff.html" class="footer__nav-link">Staff</a>
+          <a href="access.html" class="footer__nav-link">Access</a>
+          <a href="contact.html" class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Blanc Hair. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

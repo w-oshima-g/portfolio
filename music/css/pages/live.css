@@ -1,0 +1,218 @@
+/* ============================================================
+   SORA - Live Page Styles
+   ============================================================ */
+
+.live-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* --- Tour Banner --- */
+.tour-banner {
+  position: relative;
+  padding: 60px 48px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.tour-banner__bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(123, 47, 247, 0.3) 0%, rgba(255, 45, 155, 0.2) 100%);
+  border: 1px solid rgba(123, 47, 247, 0.4);
+  border-radius: 20px;
+}
+
+.tour-banner__bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(255, 45, 155, 0.15) 0%, transparent 60%);
+}
+
+.tour-banner__content {
+  position: relative;
+  z-index: 1;
+}
+
+.tour-banner__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-purple);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.tour-banner__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.08em;
+  color: var(--color-white);
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.tour-banner__desc {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  line-height: 1.8;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+/* --- Live Timeline --- */
+.live-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.live-item {
+  display: grid;
+  grid-template-columns: 80px 40px 1fr;
+  gap: 0 0;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: start;
+}
+
+.live-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+/* Date column */
+.live-item__date-col {
+  text-align: center;
+  padding-right: 16px;
+  padding-top: 4px;
+}
+
+.live-item__month {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--color-purple);
+  margin-bottom: 0;
+}
+
+.live-item__day {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--color-white);
+  margin-bottom: 2px;
+}
+
+.live-item__year {
+  font-size: 0.7rem;
+  color: var(--color-gray);
+  letter-spacing: 0.1em;
+}
+
+/* Line with dot */
+.live-item__line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  height: 100%;
+}
+
+.live-item__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gradient-main);
+  box-shadow: 0 0 12px rgba(123, 47, 247, 0.6);
+  flex-shrink: 0;
+}
+
+/* Info */
+.live-item__info {
+  padding-left: 24px;
+}
+
+.live-item__status {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.live-item__status--upcoming {
+  background: rgba(123, 47, 247, 0.2);
+  color: var(--color-purple);
+  border: 1px solid rgba(123, 47, 247, 0.4);
+}
+
+.live-item__status--final {
+  background: var(--gradient-main);
+  color: var(--color-white);
+}
+
+.live-item__status--soldout {
+  background: rgba(160, 160, 184, 0.1);
+  color: var(--color-gray);
+  border: 1px solid rgba(160, 160, 184, 0.2);
+}
+
+.live-item__venue {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  margin-bottom: 4px;
+}
+
+.live-item__city {
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  margin-bottom: 8px;
+}
+
+.live-item__detail {
+  font-size: 0.8rem;
+  color: rgba(160, 160, 184, 0.7);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.live-item__btn {
+  padding: 10px 24px;
+  font-size: 0.78rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tour-banner {
+    padding: 36px 24px;
+  }
+
+  .live-item {
+    grid-template-columns: 64px 28px 1fr;
+  }
+
+  .live-item__day {
+    font-size: 1.75rem;
+  }
+
+  .live-item__venue {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .live-item {
+    grid-template-columns: 56px 20px 1fr;
+  }
+
+  .live-item__info {
+    padding-left: 12px;
+  }
+}

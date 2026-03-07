@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FORM architects — 実績一覧。住宅・商業・公共建築プロジェクト。">
+  <title>Works | FORM architects</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/works.css">
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">FORM <span>architects</span></a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="header__nav-link">Index</a>
+        <a href="works.html" class="header__nav-link">Works</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Index</a>
+    <a href="works.html" class="mobile-menu__link">Works</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- Page Hero -->
+    <div class="page-hero container">
+      <div class="page-hero__inner">
+        <h1 class="page-hero__en">Works</h1>
+        <p class="page-hero__desc">
+          住宅・商業施設・公共建築など、<br>
+          120件以上のプロジェクトを手掛けてきました。
+        </p>
+      </div>
+    </div>
+
+    <!-- Filter -->
+    <div class="works-filter">
+      <div class="container">
+        <div class="works-filter__inner">
+          <button class="works-filter__btn is-active" data-filter="all">All</button>
+          <button class="works-filter__btn" data-filter="residential">Residential</button>
+          <button class="works-filter__btn" data-filter="commercial">Commercial</button>
+          <button class="works-filter__btn" data-filter="public">Public</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Works Grid -->
+    <div class="works-grid">
+      <div class="container">
+        <div class="works-grid__layout">
+
+          <article class="work-card work-card--tall reveal" data-category="residential">
+            <a href="works-detail.html">
+              <img class="work-card__img" src="https://images.unsplash.com/photo-1524230572899-a752b3835840?w=800&auto=format&fit=crop&q=80" alt="Nishikawa House" loading="lazy">
+              <div class="work-card__overlay">
+                <p class="work-card__category">Residential</p>
+                <h3 class="work-card__name">Nishikawa House</h3>
+                <p class="work-card__meta">Tokyo, 2023</p>
+              </div>
+              <div class="work-card__link-icon">→</div>
+            </a>
+          </article>
+
+          <article class="work-card reveal" data-category="commercial">
+            <a href="works.html">
+              <img class="work-card__img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&auto=format&fit=crop&q=80" alt="KAZE Office" loading="lazy">
+              <div class="work-card__overlay">
+                <p class="work-card__category">Commercial</p>
+                <h3 class="work-card__name">KAZE Office</h3>
+                <p class="work-card__meta">Osaka, 2022</p>
+              </div>
+              <div class="work-card__link-icon">→</div>
+            </a>
+          </article>
+
+          <article class="work-card reveal reveal--delay-1" data-category="public">
+            <a href="works.html">
+              <img class="work-card__img" src="https://images.unsplash.com/photo-1548199326-03c0bd70a2fc?w=700&auto=format&fit=crop&q=80" alt="Minato Library" loading="lazy">
+              <div class="work-card__overlay">
+                <p class="work-card__category">Public</p>
+                <h3 class="work-card__name">Minato Library</h3>
+                <p class="work-card__meta">Yokohama, 2021</p>
+              </div>
+              <div class="work-card__link-icon">→</div>
+            </a>
+          </article>
+
+          <article class="work-card reveal" data-category="residential">
+            <a href="works.html">
+              <img class="work-card__img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&auto=format&fit=crop&q=80" alt="Karuizawa Villa" loading="lazy">
+              <div class="work-card__overlay">
+                <p class="work-card__category">Residential</p>
+                <h3 class="work-card__name">Karuizawa Villa</h3>
+                <p class="work-card__meta">Nagano, 2022</p>
+              </div>
+              <div class="work-card__link-icon">→</div>
+            </a>
+          </article>
+
+          <article class="work-card reveal reveal--delay-1" data-category="commercial">
+            <a href="works.html">
+              <img class="work-card__img" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&auto=format&fit=crop&q=80" alt="Harajuku Shop" loading="lazy">
+              <div class="work-card__overlay">
+                <p class="work-card__category">Commercial</p>
+                <h3 class="work-card__name">Harajuku Boutique</h3>
+                <p class="work-card__meta">Tokyo, 2023</p>
+              </div>
+              <div class="work-card__link-icon">→</div>
+            </a>
+          </article>
+
+          <article class="work-card work-card--tall reveal" data-category="public">
+            <a href="works.html">
+              <img class="work-card__img" src="https://images.unsplash.com/photo-1573455494055-f4be4058a0d9?w=800&auto=format&fit=crop&q=80" alt="Sakura Community Center" loading="lazy">
+              <div class="work-card__overlay">
+                <p class="work-card__category">Public</p>
+                <h3 class="work-card__name">Sakura Community Center</h3>
+                <p class="work-card__meta">Saitama, 2020</p>
+              </div>
+              <div class="work-card__link-icon">→</div>
+            </a>
+          </article>
+
+          <article class="work-card reveal" data-category="residential">
+            <a href="works.html">
+              <img class="work-card__img" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&auto=format&fit=crop&q=80" alt="Setagaya House" loading="lazy">
+              <div class="work-card__overlay">
+                <p class="work-card__category">Residential</p>
+                <h3 class="work-card__name">Setagaya House</h3>
+                <p class="work-card__meta">Tokyo, 2021</p>
+              </div>
+              <div class="work-card__link-icon">→</div>
+            </a>
+          </article>
+
+          <article class="work-card reveal reveal--delay-1" data-category="commercial">
+            <a href="works.html">
+              <img class="work-card__img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&auto=format&fit=crop&q=80" alt="Ginza Restaurant" loading="lazy">
+              <div class="work-card__overlay">
+                <p class="work-card__category">Commercial</p>
+                <h3 class="work-card__name">Ginza Restaurant</h3>
+                <p class="work-card__meta">Tokyo, 2022</p>
+              </div>
+              <div class="work-card__link-icon">→</div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__brand-name">FORM</p>
+          <p class="footer__brand-sub">architects</p>
+          <p class="footer__tagline">建築の本質を追求する設計事務所。</p>
+        </div>
+        <div>
+          <p class="footer__heading">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Contact</p>
+          <address class="footer__address">
+            〒100-0001 東京都千代田区千代田 1-1<br>
+            03-9876-5432 / info@form-architects.jp
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 FORM architects.</p>
+        <p class="footer__note">Design &amp; Architecture</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

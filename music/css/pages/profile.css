@@ -1,0 +1,203 @@
+/* ============================================================
+   SORA - Profile Page Styles
+   ============================================================ */
+
+/* --- Artist Intro --- */
+.profile-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-intro {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 64px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+/* Visual Art Block */
+.profile-intro__art {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0a1f 0%, #1a0533 40%, #7b2ff7 80%, #ff2d9b 100%);
+  box-shadow: 0 20px 60px rgba(123, 47, 247, 0.4);
+}
+
+.profile-intro__art-orb {
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(ellipse at 40% 30%, rgba(255, 45, 155, 0.3) 0%, transparent 60%);
+  animation: orbFloat 6s ease-in-out infinite;
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(10%, 5%) scale(1.1); }
+}
+
+.profile-intro__art-letter {
+  position: relative;
+  font-family: var(--font-heading);
+  font-size: 10rem;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.15);
+  line-height: 1;
+  user-select: none;
+}
+
+/* Text */
+.profile-intro__name {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.profile-intro__name-jp {
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  letter-spacing: 0.3em;
+  margin-bottom: 28px;
+}
+
+.profile-intro__bio {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+/* --- Biography Timeline --- */
+.profile-timeline {
+  margin-bottom: 72px;
+}
+
+.profile-timeline__heading {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+  margin-bottom: 40px;
+}
+
+.bio-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 1px solid var(--color-border);
+  padding-left: 0;
+  margin-left: 56px;
+}
+
+.bio-item {
+  display: grid;
+  grid-template-columns: 56px 24px 1fr;
+  margin-left: -56px;
+  padding: 20px 0;
+  align-items: start;
+}
+
+.bio-item__year {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-purple);
+  letter-spacing: 0.06em;
+  padding-top: 2px;
+}
+
+.bio-item__line {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.bio-item__line::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gradient-main);
+  box-shadow: 0 0 8px rgba(123, 47, 247, 0.6);
+  flex-shrink: 0;
+}
+
+.bio-item__body {
+  padding-left: 20px;
+}
+
+.bio-item__text {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  line-height: 1.7;
+}
+
+/* --- Streaming Links --- */
+.profile-links__heading {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.profile-links__grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.profile-link-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 28px;
+  border: 1px solid var(--color-border);
+  border-radius: 40px;
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  letter-spacing: 0.08em;
+  transition: all var(--transition);
+}
+
+.profile-link-btn:hover {
+  border-color: var(--color-purple);
+  color: var(--color-white);
+  background: rgba(123, 47, 247, 0.1);
+  box-shadow: 0 0 20px rgba(123, 47, 247, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-intro {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .profile-intro__visual {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .bio-timeline {
+    margin-left: 40px;
+  }
+
+  .bio-item {
+    margin-left: -40px;
+    grid-template-columns: 40px 20px 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-intro__name {
+    font-size: 2.5rem;
+  }
+}

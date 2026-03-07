@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BLANC HAIR — 白を纏う、上質なひととき。大人の女性のための美容院。">
+  <title>BLANC HAIR | Top</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-main">Blanc Hair</span>
+        <span class="header__logo-sub">Beauty Salon</span>
+      </a>
+
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="nav__link">Top</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="staff.html" class="nav__link">Staff</a>
+        <a href="access.html" class="nav__link">Access</a>
+        <a href="contact.html" class="nav__link btn btn--gold">Contact</a>
+      </nav>
+
+      <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="モバイルメニュー">
+    <span class="mobile-menu__logo">Blanc Hair</span>
+    <ul class="mobile-menu__list">
+      <li><a href="index.html" class="mobile-menu__link">Top</a></li>
+      <li><a href="menu.html" class="mobile-menu__link">Menu</a></li>
+      <li><a href="staff.html" class="mobile-menu__link">Staff</a></li>
+      <li><a href="access.html" class="mobile-menu__link">Access</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+    </ul>
+    <p class="mobile-menu__footer">© 2024 Blanc Hair</p>
+  </div>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1600&auto=format&fit=crop&q=80"
+          alt="サロン内観"
+          class="hero__img"
+          loading="eager"
+        >
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__label reveal">Beauty Salon</p>
+        <h1 class="hero__title reveal reveal--delay-1">
+          白を纏う、<br>上質なひととき。
+        </h1>
+        <p class="hero__desc reveal reveal--delay-2">大人の女性のための、静かで洗練された美容院。</p>
+        <div class="hero__ctas reveal reveal--delay-3">
+          <a href="contact.html" class="btn btn--filled">ご予約はこちら</a>
+          <a href="menu.html" class="btn">Menu を見る</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== CONCEPT ========== -->
+    <section class="section concept" id="concept">
+      <div class="section__inner concept__inner">
+        <div class="concept__image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&auto=format&fit=crop&q=80"
+            alt="コンセプトイメージ"
+          >
+        </div>
+        <div class="concept__body">
+          <span class="section-label reveal">Concept</span>
+          <div class="gold-divider reveal reveal--delay-1"></div>
+          <h2 class="section-title reveal reveal--delay-1">
+            上質な時間を、<br>あなたに。
+          </h2>
+          <p class="section-subtitle reveal reveal--delay-2">
+            BLANC HAIR は「白」をコンセプトに、余白と静けさを大切にした空間です。
+            一人ひとりの髪と向き合い、素材の美しさを引き出すケアをご提供します。
+          </p>
+          <p class="section-subtitle reveal reveal--delay-3" style="margin-top:16px;">
+            慌ただしい日常から離れ、ただ美しくなることだけを考えていただける、そんなひとときをお届けします。
+          </p>
+          <a href="menu.html" class="btn reveal reveal--delay-4" style="margin-top:36px;">サービスを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section section--gray services" id="services">
+      <div class="section__inner">
+        <div class="services__head">
+          <span class="section-label reveal">Services</span>
+          <div class="gold-divider gold-divider--center reveal reveal--delay-1"></div>
+          <h2 class="section-title section-title--center reveal reveal--delay-1">サービス一覧</h2>
+          <p class="section-subtitle section-subtitle--center reveal reveal--delay-2">
+            カットからカラー、トリートメントまで、幅広いメニューをご用意しています。
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon">✂</div>
+            <h3 class="service-card__title">Cut</h3>
+            <p class="service-card__name">カット</p>
+            <p class="service-card__desc">骨格・髪質に合わせた、素材を活かすカット。¥6,600〜</p>
+            <a href="menu.html" class="service-card__link">詳細を見る →</a>
+          </article>
+
+          <article class="service-card reveal reveal--delay-1">
+            <div class="service-card__icon">◎</div>
+            <h3 class="service-card__title">Color</h3>
+            <p class="service-card__name">カラー</p>
+            <p class="service-card__desc">透明感のある発色とダメージレスなカラーリング。¥8,800〜</p>
+            <a href="menu.html" class="service-card__link">詳細を見る →</a>
+          </article>
+
+          <article class="service-card reveal reveal--delay-2">
+            <div class="service-card__icon">∿</div>
+            <h3 class="service-card__title">Perm</h3>
+            <p class="service-card__name">パーマ</p>
+            <p class="service-card__desc">自然なウェーブから大人のエレガントカールまで。¥11,000〜</p>
+            <a href="menu.html" class="service-card__link">詳細を見る →</a>
+          </article>
+
+          <article class="service-card reveal reveal--delay-3">
+            <div class="service-card__icon">✦</div>
+            <h3 class="service-card__title">Treatment</h3>
+            <p class="service-card__name">トリートメント</p>
+            <p class="service-card__desc">傷んだ髪を芯から補修。潤いとツヤを取り戻します。¥3,300〜</p>
+            <a href="menu.html" class="service-card__link">詳細を見る →</a>
+          </article>
+        </div>
+
+        <div class="services__cta reveal">
+          <a href="menu.html" class="btn btn--gold">全メニュー・料金を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NEWS ========== -->
+    <section class="section news" id="news">
+      <div class="section__inner">
+        <span class="section-label reveal">News</span>
+        <div class="gold-divider reveal reveal--delay-1"></div>
+        <h2 class="section-title reveal reveal--delay-1">お知らせ</h2>
+
+        <ul class="news__list">
+          <li class="news__item reveal">
+            <time class="news__date" datetime="2024-12-20">2024.12.20</time>
+            <span class="news__category">お知らせ</span>
+            <p class="news__title">年末年始の営業時間について</p>
+          </li>
+          <li class="news__item reveal reveal--delay-1">
+            <time class="news__date" datetime="2024-11-15">2024.11.15</time>
+            <span class="news__category">新メニュー</span>
+            <p class="news__title">冬の集中トリートメントキャンペーン開始</p>
+          </li>
+          <li class="news__item reveal reveal--delay-2">
+            <time class="news__date" datetime="2024-10-01">2024.10.01</time>
+            <span class="news__category">お知らせ</span>
+            <p class="news__title">新スタイリスト「Emi Tanaka」が加わりました</p>
+          </li>
+          <li class="news__item reveal reveal--delay-3">
+            <time class="news__date" datetime="2024-09-10">2024.09.10</time>
+            <span class="news__category">メディア</span>
+            <p class="news__title">雑誌「ビューティJP」11月号に掲載されました</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+      <div class="cta-banner__inner">
+        <p class="cta-banner__label reveal">Reservation</p>
+        <h2 class="cta-banner__title reveal reveal--delay-1">あなたの美しさと向き合う時間を。</h2>
+        <a href="contact.html" class="btn btn--filled reveal reveal--delay-2">ご予約・お問い合わせ</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <p class="footer__logo">Blanc Hair</p>
+          <p class="footer__tagline">上質なひとときを、あなたに。</p>
+        </div>
+        <div class="footer__info">
+          <p class="footer__info-item">〒150-0001 東京都渋谷区神宮前 1-2-3 プレミアムビル2F</p>
+          <p class="footer__info-item">TEL: 03-1234-5678</p>
+          <p class="footer__info-item">営業時間: 10:00 – 20:00（水曜定休）</p>
+        </div>
+        <nav class="footer__nav" aria-label="フッターナビゲーション">
+          <a href="index.html" class="footer__nav-link">Top</a>
+          <a href="menu.html" class="footer__nav-link">Menu</a>
+          <a href="staff.html" class="footer__nav-link">Staff</a>
+          <a href="access.html" class="footer__nav-link">Access</a>
+          <a href="contact.html" class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Blanc Hair. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

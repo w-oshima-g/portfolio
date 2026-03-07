@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nishikawa House — FORM architects. 東京都世田谷区の個人邸宅。">
+  <title>Nishikawa House | FORM architects</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/works-detail.css">
+</head>
+<body>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">FORM <span>architects</span></a>
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <a href="index.html" class="header__nav-link">Index</a>
+        <a href="works.html" class="header__nav-link">Works</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-menu__link">Index</a>
+    <a href="works.html" class="mobile-menu__link">Works</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- Work Hero -->
+    <div class="work-detail-hero">
+      <img
+        class="work-detail-hero__img"
+        src="https://images.unsplash.com/photo-1524230572899-a752b3835840?w=1800&auto=format&fit=crop&q=80"
+        alt="Nishikawa House 外観"
+        loading="eager"
+      >
+      <div class="work-detail-hero__overlay"></div>
+      <div class="work-detail-hero__content container">
+        <p class="work-detail-hero__category">Residential</p>
+        <h1 class="work-detail-hero__title">Nishikawa House</h1>
+        <p class="work-detail-hero__location">Tokyo, Setagaya — 2023</p>
+      </div>
+    </div>
+
+    <!-- Work Info -->
+    <section class="work-detail-info">
+      <div class="container">
+        <div class="work-detail-info__layout">
+
+          <div class="work-detail-info__specs reveal">
+            <dl class="specs-list">
+              <div class="specs-list__item">
+                <dt class="specs-list__label">Project</dt>
+                <dd class="specs-list__value">Nishikawa House</dd>
+              </div>
+              <div class="specs-list__item">
+                <dt class="specs-list__label">Type</dt>
+                <dd class="specs-list__value">Residential / Private Home</dd>
+              </div>
+              <div class="specs-list__item">
+                <dt class="specs-list__label">Location</dt>
+                <dd class="specs-list__value">Setagaya-ku, Tokyo</dd>
+              </div>
+              <div class="specs-list__item">
+                <dt class="specs-list__label">Year</dt>
+                <dd class="specs-list__value">2023</dd>
+              </div>
+              <div class="specs-list__item">
+                <dt class="specs-list__label">Area</dt>
+                <dd class="specs-list__value">280 m²</dd>
+              </div>
+              <div class="specs-list__item">
+                <dt class="specs-list__label">Structure</dt>
+                <dd class="specs-list__value">RC + Wood Hybrid</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="work-detail-info__desc reveal reveal--delay-1">
+            <p class="section-label">Project Overview</p>
+            <p class="work-detail-info__text">
+              Nishikawa House は、東京・世田谷に建つ4人家族のための個人邸宅です。
+              「光と素材の対話」をコンセプトに、コンクリートと木材を組み合わせたハイブリッド構造を採用しました。
+            </p>
+            <p class="work-detail-info__text">
+              南面の大きな開口部から差し込む自然光が、コンクリートの壁面に時刻とともに変化する陰影を生み出します。
+              プライバシーを確保しながら、庭との視線の繋がりを大切に設計しました。
+            </p>
+            <p class="work-detail-info__text">
+              1階はパブリックな生活空間として、リビング・ダイニング・キッチンをひとつながりのフロアに配置。
+              2階は各個室をプライベートゾーンとし、家族それぞれの時間を守る構成としています。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="work-detail-gallery">
+      <div class="container">
+        <p class="section-label reveal">Gallery</p>
+        <div class="work-detail-gallery__grid">
+          <figure class="gallery-item gallery-item--wide reveal">
+            <img
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&auto=format&fit=crop&q=80"
+              alt="リビングスペース"
+              loading="lazy"
+            >
+            <figcaption class="gallery-item__caption">Living Space — 南面大開口を望むリビング</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&auto=format&fit=crop&q=80"
+              alt="キッチン"
+              loading="lazy"
+            >
+            <figcaption class="gallery-item__caption">Kitchen</figcaption>
+          </figure>
+          <figure class="gallery-item reveal reveal--delay-1">
+            <img
+              src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=700&auto=format&fit=crop&q=80"
+              alt="階段"
+              loading="lazy"
+            >
+            <figcaption class="gallery-item__caption">Staircase — コンクリートと木の接合部</figcaption>
+          </figure>
+          <figure class="gallery-item gallery-item--wide reveal">
+            <img
+              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&auto=format&fit=crop&q=80"
+              alt="外観夜景"
+              loading="lazy"
+            >
+            <figcaption class="gallery-item__caption">Exterior — 夜景。内部の光が外に溢れる。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="work-detail-nav">
+      <div class="container">
+        <a href="works.html" class="btn">
+          <span class="btn__arrow" style="transform:rotate(180deg)">→</span> Back to Works
+        </a>
+        <a href="contact.html" class="btn btn--solid">お問い合わせ <span class="btn__arrow">→</span></a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__brand-name">FORM</p>
+          <p class="footer__brand-sub">architects</p>
+          <p class="footer__tagline">建築の本質を追求する設計事務所。</p>
+        </div>
+        <div>
+          <p class="footer__heading">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Contact</p>
+          <address class="footer__address">
+            〒100-0001 東京都千代田区千代田 1-1<br>
+            03-9876-5432
+          </address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2024 FORM architects.</p>
+        <p class="footer__note">Design &amp; Architecture</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
