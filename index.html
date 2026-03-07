@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: rgba(255,255,255,0.08);
+      --text: #e8e8f0;
+      --muted: #6b6b80;
+      --accent: #7b5ea7;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .header {
+      padding: 3rem 2rem 0;
+      text-align: center;
+    }
+
+    .header__label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .header__title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .header__title span {
+      font-weight: 600;
+    }
+
+    .header__desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0 auto 3rem;
+      line-height: 1.7;
+    }
+
+    /* Grid */
+    .works {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Card */
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.18);
+    }
+
+    /* Card preview area */
+    .card__preview {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* カフェ: ダークモダン */
+    .card--cafe .card__preview {
+      background: #0a0a0a;
+    }
+    .card--cafe .card__preview::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(45,74,45,0.5) 0%, transparent 60%);
+    }
+    .card--cafe .preview-text {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      font-family: 'Georgia', serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.15em;
+      color: #f5f0e8;
+      font-style: italic;
+    }
+    .card--cafe .preview-dot {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid rgba(45,74,45,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card--cafe .preview-dot::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #2d4a2d;
+    }
+    .card--cafe .preview-lines {
+      position: absolute;
+      top: 50%;
+      left: 1.5rem;
+      right: 1.5rem;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .card--cafe .preview-line {
+      height: 1px;
+      background: rgba(245,240,232,0.1);
+    }
+    .card--cafe .preview-line:nth-child(2) { width: 70%; }
+    .card--cafe .preview-line:nth-child(3) { width: 45%; }
+
+    /* サロン: 白×ゴールド */
+    .card--salon .card__preview {
+      background: #f8f8f8;
+    }
+    .card--salon .preview-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #c9a84c, #e8d48a, #c9a84c);
+    }
+    .card--salon .preview-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #1a1a1a;
+    }
+    .card--salon .preview-text .name {
+      font-family: 'Georgia', serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.25em;
+      font-weight: 400;
+    }
+    .card--salon .preview-text .sub {
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      color: #c9a84c;
+      margin-top: 6px;
+      text-transform: uppercase;
+    }
+    .card--salon .preview-cards {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      display: flex;
+      gap: 6px;
+    }
+    .card--salon .preview-card-item {
+      flex: 1;
+      height: 48px;
+      background: #fff;
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 4px;
+    }
+
+    /* 建築: ダークネイビー×グリッド */
+    .card--architect .card__preview {
+      background: #1a1a2e;
+      background-image:
+        linear-gradient(rgba(136,136,136,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(136,136,136,0.06) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .card--architect .preview-text {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .card--architect .preview-text .sub {
+      display: block;
+      font-size: 0.6rem;
+      font-weight: 300;
+      letter-spacing: 0.3em;
+      color: rgba(255,255,255,0.4);
+      margin-top: 4px;
+    }
+    .card--architect .preview-blocks {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 6px;
+    }
+    .card--architect .preview-block {
+      height: 56px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .card--architect .preview-block:first-child {
+      height: 80px;
+    }
+    .card--architect .preview-col {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .card--architect .preview-col .preview-block {
+      height: 37px;
+    }
+
+    /* エンジニア: ターミナル */
+    .card--engineer .card__preview {
+      background: #0d1117;
+      padding: 1rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .card--engineer .term-bar {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 0.8rem;
+    }
+    .card--engineer .term-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .card--engineer .term-dot:nth-child(1) { background: #ff5f57; }
+    .card--engineer .term-dot:nth-child(2) { background: #ffbd2e; }
+    .card--engineer .term-dot:nth-child(3) { background: #28c840; }
+    .card--engineer .term-line {
+      font-size: 0.72rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.35);
+    }
+    .card--engineer .term-line .prompt { color: #39ff14; }
+    .card--engineer .term-line .cmd { color: #00d4ff; }
+    .card--engineer .term-line .out { color: rgba(255,255,255,0.55); }
+    .card--engineer .term-line .cursor {
+      display: inline-block;
+      width: 7px;
+      height: 13px;
+      background: #00d4ff;
+      vertical-align: middle;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    /* 音楽: グラデーション */
+    .card--music .card__preview {
+      background: #050510;
+      overflow: hidden;
+    }
+    .card--music .preview-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(40px);
+    }
+    .card--music .preview-orb--1 {
+      width: 160px;
+      height: 160px;
+      background: #7b2ff7;
+      opacity: 0.5;
+      top: -40px;
+      left: -20px;
+    }
+    .card--music .preview-orb--2 {
+      width: 120px;
+      height: 120px;
+      background: #ff2d9b;
+      opacity: 0.4;
+      bottom: -30px;
+      right: 20px;
+    }
+    .card--music .preview-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .card--music .preview-text .name {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      background: linear-gradient(135deg, #fff 0%, #e0b0ff 50%, #ff9fe5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+    .card--music .preview-text .sub {
+      font-size: 0.6rem;
+      letter-spacing: 0.4em;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+
+    /* Card body */
+    .card__body {
+      padding: 1.25rem 1.5rem 1.5rem;
+    }
+
+    .card__meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .card__tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      padding: 2px 8px;
+      border-radius: 3px;
+      letter-spacing: 0.05em;
+    }
+
+    .card--cafe .card__tag { background: rgba(45,74,45,0.3); color: #8ab48a; }
+    .card--salon .card__tag { background: rgba(201,168,76,0.15); color: #c9a84c; }
+    .card--architect .card__tag { background: rgba(26,26,46,0.8); color: #8888aa; border: 1px solid rgba(136,136,136,0.2); }
+    .card--engineer .card__tag { background: rgba(0,212,255,0.1); color: #00d4ff; }
+    .card--music .card__tag { background: rgba(123,47,247,0.2); color: #b07ef7; }
+
+    .card__pages {
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+
+    .card__name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.01em;
+    }
+
+    .card__sub {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .card__arrow {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.2s ease, color 0.2s ease;
+    }
+
+    .card:hover .card__arrow {
+      gap: 0.8rem;
+      color: var(--text);
+    }
+
+    .card__arrow-icon {
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+
+    @media (max-width: 768px) {
+      .works {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+      .header { padding: 2rem 1rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <p class="header__label">Web Design Portfolio</p>
+    <h1 class="header__title">Sample <span>Works</span></h1>
+    <p class="header__desc">さまざまな業種・デザインテイストで制作した5つのホームページサンプルです。</p>
+  </header>
+
+  <main class="works">
+
+    <!-- カフェ -->
+    <a class="card card--cafe" href="./cafe/index.html">
+      <div class="card__preview">
+        <div class="preview-lines">
+          <div class="preview-line"></div>
+          <div class="preview-line"></div>
+          <div class="preview-line"></div>
+        </div>
+        <div class="preview-dot"></div>
+        <div class="preview-text">KOKE COFFEE</div>
+      </div>
+      <div class="card__body">
+        <div class="card__meta">
+          <span class="card__tag">Cafe</span>
+          <span class="card__pages">Single Page</span>
+        </div>
+        <p class="card__name">KOKE COFFEE</p>
+        <p class="card__sub">ダークモダン × ミニマル — カフェ・飲食店</p>
+        <span class="card__arrow">サイトを見る <span class="card__arrow-icon">→</span></span>
+      </div>
+    </a>
+
+    <!-- サロン -->
+    <a class="card card--salon" href="./salon/index.html">
+      <div class="card__preview">
+        <div class="preview-bar"></div>
+        <div class="preview-text">
+          <div class="name">BLANC HAIR</div>
+          <div class="sub">Beauty Salon</div>
+        </div>
+        <div class="preview-cards">
+          <div class="preview-card-item"></div>
+          <div class="preview-card-item"></div>
+          <div class="preview-card-item"></div>
+        </div>
+      </div>
+      <div class="card__body">
+        <div class="card__meta">
+          <span class="card__tag">Salon</span>
+          <span class="card__pages">5 Pages</span>
+        </div>
+        <p class="card__name">BLANC HAIR</p>
+        <p class="card__sub">白基調 × ゴールド — 美容院・サロン</p>
+        <span class="card__arrow">サイトを見る <span class="card__arrow-icon">→</span></span>
+      </div>
+    </a>
+
+    <!-- 建築 -->
+    <a class="card card--architect" href="./architect/index.html">
+      <div class="card__preview">
+        <div class="preview-text">
+          FORM
+          <span class="sub">architects</span>
+        </div>
+        <div class="preview-blocks">
+          <div class="preview-block"></div>
+          <div class="preview-col">
+            <div class="preview-block"></div>
+            <div class="preview-block"></div>
+          </div>
+          <div class="preview-col">
+            <div class="preview-block"></div>
+            <div class="preview-block"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card__body">
+        <div class="card__meta">
+          <span class="card__tag">Architect</span>
+          <span class="card__pages">5 Pages</span>
+        </div>
+        <p class="card__name">FORM architects</p>
+        <p class="card__sub">グリッド × ミニマリズム — 建築事務所</p>
+        <span class="card__arrow">サイトを見る <span class="card__arrow-icon">→</span></span>
+      </div>
+    </a>
+
+    <!-- エンジニア -->
+    <a class="card card--engineer" href="./engineer/index.html">
+      <div class="card__preview">
+        <div class="term-bar">
+          <div class="term-dot"></div>
+          <div class="term-dot"></div>
+          <div class="term-dot"></div>
+        </div>
+        <div class="term-line"><span class="prompt">$ </span><span class="cmd">whoami</span></div>
+        <div class="term-line"><span class="out">Takuya Nishida / Frontend Engineer</span></div>
+        <div class="term-line"><span class="prompt">$ </span><span class="cmd">cat skills.json</span></div>
+        <div class="term-line"><span class="out">["React", "TypeScript", "Node.js", ...]</span></div>
+        <div class="term-line"><span class="prompt">$ </span><span class="cursor"></span></div>
+      </div>
+      <div class="card__body">
+        <div class="card__meta">
+          <span class="card__tag">Engineer</span>
+          <span class="card__pages">Single Page</span>
+        </div>
+        <p class="card__name">Takuya Nishida</p>
+        <p class="card__sub">ターミナル × ダークUI — フリーランスエンジニア</p>
+        <span class="card__arrow">サイトを見る <span class="card__arrow-icon">→</span></span>
+      </div>
+    </a>
+
+    <!-- 音楽 -->
+    <a class="card card--music" href="./music/index.html">
+      <div class="card__preview">
+        <div class="preview-orb preview-orb--1"></div>
+        <div class="preview-orb preview-orb--2"></div>
+        <div class="preview-text">
+          <div class="name">SORA</div>
+          <div class="sub">Music Artist</div>
+        </div>
+      </div>
+      <div class="card__body">
+        <div class="card__meta">
+          <span class="card__tag">Music</span>
+          <span class="card__pages">5 Pages</span>
+        </div>
+        <p class="card__name">SORA</p>
+        <p class="card__sub">グラデーション × 幻想的 — 音楽アーティスト</p>
+        <span class="card__arrow">サイトを見る <span class="card__arrow-icon">→</span></span>
+      </div>
+    </a>
+
+  </main>
+
+  <footer class="footer">
+    <p>// Web Design Portfolio &mdash; 5 Sample Sites</p>
+  </footer>
+
+</body>
+</html>
