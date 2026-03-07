@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOKE COFFEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="#hero" class="nav__logo">KOKE COFFEE</a>
+      <ul class="nav__list">
+        <li><a href="#about"   class="nav__link">About</a></li>
+        <li><a href="#menu"    class="nav__link">Menu</a></li>
+        <li><a href="#access"  class="nav__link">Access</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile overlay menu -->
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul class="nav__mobile-list">
+        <li><a href="#about"   class="nav__mobile-link">About</a></li>
+        <li><a href="#menu"    class="nav__mobile-link">Menu</a></li>
+        <li><a href="#access"  class="nav__mobile-link">Access</a></li>
+        <li><a href="#contact" class="nav__mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Specialty Coffee · Tokyo</p>
+        <h1 class="hero__title">KOKE<br>COFFEE</h1>
+        <p class="hero__desc">静かな時間と、本物の一杯を。</p>
+        <a href="#menu" class="hero__btn">Our Menu</a>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-label">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=80"
+            alt="KOKE COFFEE 店内"
+            loading="lazy"
+          >
+          <div class="about__image-deco" aria-hidden="true"></div>
+        </div>
+        <div class="about__content">
+          <span class="label reveal">About</span>
+          <h2 class="about__title reveal reveal-delay-1">Silence &amp;<br>Specialty</h2>
+          <p class="about__text reveal reveal-delay-2">
+            KOKE COFFEEは、喧騒を離れた静かな空間で、厳選したスペシャルティコーヒーをお楽しみいただけるカフェです。
+          </p>
+          <p class="about__text reveal reveal-delay-2">
+            豆の産地から焙煎方法まで、すべてにこだわり抜いた一杯をご提供します。ゆっくりと流れる時間の中で、本物のコーヒーと向き合う体験をどうぞ。
+          </p>
+          <div class="about__stats reveal reveal-delay-3">
+            <div class="about__stat">
+              <span class="about__stat-number">12</span>
+              <span class="about__stat-label">Origins</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">8</span>
+              <span class="about__stat-label">Roasters</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">2018</span>
+              <span class="about__stat-label">Since</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MENU ==================== -->
+    <section class="menu" id="menu">
+      <div class="menu__inner">
+        <div class="menu__header reveal">
+          <span class="label label--light">Menu</span>
+          <h2 class="menu__title">Our Specialty</h2>
+        </div>
+        <div class="menu__grid">
+
+          <article class="menu-card reveal">
+            <div class="menu-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=80"
+                alt="Espresso"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Espresso</h3>
+              <p class="menu-card__desc">濃厚なアロマと深みのある余韻。</p>
+              <span class="menu-card__price">¥ 550</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-1">
+            <div class="menu-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&q=80"
+                alt="Latte"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Latte</h3>
+              <p class="menu-card__desc">まろやかなミルクと調和する一杯。</p>
+              <span class="menu-card__price">¥ 680</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2">
+            <div class="menu-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&q=80"
+                alt="Pour Over"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Pour Over</h3>
+              <p class="menu-card__desc">豆本来の風味を引き出すハンドドリップ。</p>
+              <span class="menu-card__price">¥ 750</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal">
+            <div class="menu-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700&q=80"
+                alt="Cold Brew"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Cold Brew</h3>
+              <p class="menu-card__desc">12時間低温抽出。滑らかで香り豊か。</p>
+              <span class="menu-card__price">¥ 720</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-1">
+            <div class="menu-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=700&q=80"
+                alt="Matcha Latte"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Matcha Latte</h3>
+              <p class="menu-card__desc">京都産の抹茶と有機牛乳の調和。</p>
+              <span class="menu-card__price">¥ 700</span>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2">
+            <div class="menu-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=700&q=80"
+                alt="Seasonal"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__name">Seasonal</h3>
+              <p class="menu-card__desc">季節の素材を活かした限定メニュー。</p>
+              <span class="menu-card__price">¥ 780</span>
+            </div>
+          </article>
+
+        </div><!-- /.menu__grid -->
+      </div>
+    </section>
+
+    <!-- ==================== ACCESS ==================== -->
+    <section class="access" id="access">
+      <div class="access__inner">
+        <div class="access__content">
+          <span class="label reveal">Access</span>
+          <h2 class="access__title reveal reveal-delay-1">Find Us</h2>
+          <dl class="access__list">
+            <div class="access__item reveal reveal-delay-2">
+              <dt class="access__term">Address</dt>
+              <dd class="access__desc">東京都渋谷区代官山町 12-3<br>コケビル 1F</dd>
+            </div>
+            <div class="access__item reveal reveal-delay-2">
+              <dt class="access__term">Hours</dt>
+              <dd class="access__desc">
+                月〜金　8:00 – 20:00<br>
+                土・日　9:00 – 21:00<br>
+                <span class="access__closed">水曜定休</span>
+              </dd>
+            </div>
+            <div class="access__item reveal reveal-delay-3">
+              <dt class="access__term">Train</dt>
+              <dd class="access__desc">東急東横線 代官山駅より徒歩 3 分</dd>
+            </div>
+            <div class="access__item reveal reveal-delay-3">
+              <dt class="access__term">Tel</dt>
+              <dd class="access__desc">03-0000-0000</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="access__map reveal reveal-delay-2">
+          <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" aria-label="アクセスマップ">
+            <rect width="500" height="400" fill="#111"/>
+            <!-- grid -->
+            <line x1="0" y1="133" x2="500" y2="133" stroke="#1e1e1e" stroke-width="1"/>
+            <line x1="0" y1="266" x2="500" y2="266" stroke="#1e1e1e" stroke-width="1"/>
+            <line x1="166" y1="0" x2="166" y2="400" stroke="#1e1e1e" stroke-width="1"/>
+            <line x1="333" y1="0" x2="333" y2="400" stroke="#1e1e1e" stroke-width="1"/>
+            <!-- roads -->
+            <rect x="140" y="0"   width="36" height="400" fill="#1c1c1c"/>
+            <rect x="0"   y="170" width="500" height="36" fill="#1c1c1c"/>
+            <rect x="300" y="0"   width="24" height="170" fill="#1c1c1c"/>
+            <rect x="300" y="206" width="24" height="194" fill="#1c1c1c"/>
+            <!-- blocks -->
+            <rect x="186" y="210" width="110" height="65" rx="2" fill="#1a1a1a"/>
+            <rect x="50"  y="210" width="80"  height="65" rx="2" fill="#1a1a1a"/>
+            <rect x="186" y="90"  width="80"  height="70" rx="2" fill="#1a1a1a"/>
+            <rect x="330" y="210" width="90"  height="65" rx="2" fill="#1a1a1a"/>
+            <rect x="330" y="90"  width="90"  height="70" rx="2" fill="#1a1a1a"/>
+            <!-- station label -->
+            <rect x="50" y="90" width="80" height="65" rx="2" fill="#1d2a1d"/>
+            <text x="90" y="127" text-anchor="middle" fill="#3d6e3d" font-size="9" font-family="sans-serif">代官山駅</text>
+            <!-- path to cafe -->
+            <line x1="140" y1="122" x2="258" y2="122" stroke="#2d4a2d" stroke-width="2" stroke-dasharray="5,3"/>
+            <line x1="258" y1="122" x2="258" y2="170" stroke="#2d4a2d" stroke-width="2" stroke-dasharray="5,3"/>
+            <!-- pin -->
+            <circle cx="258" cy="188" r="12" fill="#2d4a2d" opacity="0.3"/>
+            <circle cx="258" cy="188" r="7"  fill="#2d4a2d"/>
+            <circle cx="258" cy="188" r="3"  fill="#f5f0e8"/>
+            <text x="258" y="208" text-anchor="middle" fill="#f5f0e8" font-size="10" font-family="sans-serif" letter-spacing="1">KOKE COFFEE</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <div class="contact__head reveal">
+          <span class="label label--light">Contact</span>
+          <h2 class="contact__title">Get in Touch</h2>
+          <p class="contact__sub">ご予約・お問い合わせはこちらから</p>
+        </div>
+
+        <form class="contact__form reveal reveal-delay-1" id="contactForm" novalidate>
+
+          <div class="form-group">
+            <label class="form-group__label" for="name">
+              お名前 <span class="form-group__required" aria-hidden="true">*</span>
+            </label>
+            <input
+              class="form-group__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="山田 太郎"
+              autocomplete="name"
+              required
+            >
+            <span class="form-group__error" id="nameError" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label" for="email">
+              メールアドレス <span class="form-group__required" aria-hidden="true">*</span>
+            </label>
+            <input
+              class="form-group__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              autocomplete="email"
+              required
+            >
+            <span class="form-group__error" id="emailError" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label" for="subject">件名</label>
+            <input
+              class="form-group__input"
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="ご予約・お問い合わせなど"
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label" for="message">
+              メッセージ <span class="form-group__required" aria-hidden="true">*</span>
+            </label>
+            <textarea
+              class="form-group__textarea"
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="メッセージをご入力ください"
+              required
+            ></textarea>
+            <span class="form-group__error" id="messageError" role="alert"></span>
+          </div>
+
+          <button class="contact__btn" type="submit">
+            <span class="contact__btn-text">送信する</span>
+          </button>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__logo">KOKE COFFEE</p>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <a href="#about"   class="footer__link">About</a>
+        <a href="#menu"    class="footer__link">Menu</a>
+        <a href="#access"  class="footer__link">Access</a>
+        <a href="#contact" class="footer__link">Contact</a>
+      </nav>
+      <p class="footer__copy">&copy; 2024 KOKE COFFEE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
